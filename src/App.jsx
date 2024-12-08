@@ -4,6 +4,10 @@ import BestFoodOptions from './Components/BestFoodOptions';
 import Header from './Components/Header';
 import Search from './Components/Search';
 import apiData from '../src/data.json';
+import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
+import OffersCard from './Components/OffersCard';
+import BestRestautent from './Components/BestRestautent';
+
 
 function App() {
   const [data, setData] = useState([]);
@@ -34,50 +38,52 @@ function App() {
   }
   return (
     <>
-      <div className="max-w-[1200px] m-auto">
-        <Header />
-        <Search />
-        <div>
-          <div className='flex justify-between'>
-            <div>
-              <h2>Order our best food options</h2>
-            </div>
-            <div className='flex gap-3'>
-              <div onClick={handleLeft}>
-                <svg aria-hidden="true" height={16} width={16} className="sc-gEvEer buqVUw">
-                  <use xlinkHref="/core/sprite-Dkz5JHnu.svg#arrowBack16" />
-                </svg>
+      <div className="bg-[#ff5200]">
+        <div className="max-w-[1200px] m-auto">
+          <Header />
+          <Search />
+          <OffersCard />
+          <div className='bg-white'>
+            <div className='flex justify-between'>
+              <div>
+                <h2>Order our best food options</h2>
               </div>
-              <div onClick={handleRight}>
-                <svg aria-hidden="true" height={16} width={16} className="sc-gEvEer buqVUw">
-                  <use xlinkHref="/core/sprite-Dkz5JHnu.svg#arrowFront16" />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div className='overflow-x-auto duration-300'
-            style={{
-              transform: `translateX(-${slide * 100})%`
-            }}
-          >
-            {/* Top Row */}
-            <div className="flex ">
-              {topRow.map((data) => {
-                // Assuming `data.id` is a unique identifier for each item
-                return <BestFoodOptions key={data.id} data={data} slide={slide} />;
-              })}
-            </div>
+              <div className='flex gap-3'>
+                <div onClick={handleLeft}>
+                  <div onClick={handleLeft} className='rounded-full h-[34px] w-[34px]  bg-[#02060c26] pt-2 pr-2 pb-1 pl-2 '>
+                    <IoIosArrowRoundBack />
+                  </div>
 
-            {/* Bottom Row (Scrollable) */}
-            <div className="flex ">
-              {bottomRow.map((data) => {
-                // Assuming `data.id` is a unique identifier for each item
-                return <BestFoodOptions key={data.id} data={data} slide={slide} />;
-              })}
+                </div>
+                <div onClick={handleRight} className='rounded-full h-[34px] w-[34px]  bg-[#02060c26] pt-2 pr-2 pb-1 pl-2 '>
+                  <IoIosArrowRoundForward />
+                </div>
+              </div>
+            </div>
+            <div className='overflow-x-auto duration-300'
+              style={{
+                transform: `translateX(-${slide * 100})%`
+              }}
+            >
+              {/* Top Row */}
+              <div className="flex ">
+                {topRow.map((data) => {
+                  // Assuming `data.id` is a unique identifier for each item
+                  return <BestFoodOptions key={data.id} data={data} slide={slide} />;
+                })}
+              </div>
+
+              {/* Bottom Row (Scrollable) */}
+              <div className="flex ">
+                {bottomRow.map((data) => {
+                  // Assuming `data.id` is a unique identifier for each item
+                  return <BestFoodOptions key={data.id} data={data} slide={slide} />;
+                })}
+              </div>
             </div>
           </div>
+          <BestRestautent />
         </div>
-
       </div>
     </>
   );
