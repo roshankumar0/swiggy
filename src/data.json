@@ -352,6 +352,129 @@
             "image":"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Pasta.png",
             "path": "south-indian"
         }
-        ]
+        ],
+         "restaurantData": [
+            {
+                "id": 1,
+                "name": "The Royal Feast",
+                "rating": "4.2",
+                "cuisine": "Continental • Fusion",
+                "costForTwo": "₹1400 for two",
+                "location": "Andheri West, Mumbai",
+                "distance": "5.5 km",
+                "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/DINEOUT_ALL_RESTAURANTS/IMAGES/RESTAURANT_IMAGE_SERVICE/2024/4/19/c644ea0f-a7f3-4490-98c7-62e078d0fae0_20240419T103038506.jpg",
+                "offer": "Flat 30% off on pre-booking",
+                "bankOffer": "Up to 20% off with bank offers"
+            },
+            {
+                "id": 2,
+                "name": "Taste of Tuscany",
+                "rating": "4.6",
+                "cuisine": "Italian • European",
+                "costForTwo": "₹1600 for two",
+                "location": "Bandra, Mumbai",
+                "distance": "7.2 km",
+                "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1681892708/7fea3cbbeca1654c741be54a79042eed.webp",
+                "offer": "Flat 10% off on pre-booking",
+                "bankOffer": "Up to 15% off with bank offers"
+            },
+            {
+                "id": 3,
+                "name": "The Sushi Bar",
+                "rating": "4.3",
+                "cuisine": "Japanese • Asian",
+                "costForTwo": "₹1100 for two",
+                "location": "Juhu, Mumbai",
+                "distance": "6.1 km",
+                "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1683272971/9f204508fd01643feb27178c8d5ef534.jpg",
+                "offer": "Flat 20% off on pre-booking",
+                "bankOffer": "5% cashback on card payments"
+            },
+            {
+                "id": 4,
+                "name": "Pasta Pronto",
+                "rating": "4.0",
+                "cuisine": "Italian • Pasta",
+                "costForTwo": "₹950 for two",
+                "location": "Colaba, Mumbai",
+                "distance": "4.0 km",
+                "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/DINEOUT_ALL_RESTAURANTS/IMAGES/RESTAURANT_IMAGE_SERVICE/2024/6/13/d09aff59-9e70-4e17-9075-9963023fa737_image10f51a54b2f0b241388ea07fa0407ef251.JPG",
+                "offer": "Flat 10% off on pre-booking",
+                "bankOffer": "Flat 10% off with bank offers"
+            },
+            {
+                "id": 5,
+                "name": "The Spice Route",
+                "rating": "4.4",
+                "cuisine": "Indian • Mughlai",
+                "costForTwo": "₹1300 for two",
+                "location": "Navi Mumbai",
+                "distance": "8.3 km",
+                "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1693401572/3a4e3b6fe4769f2e979c677541b8c202.jpg",
+                "offer": "Flat 50% off on pre-booking",
+                "bankOffer": "Up to 15% off with selected banks"
+            },
+            {
+                "id": 6,
+                "name": "The Grill House",
+                "rating": "4.5",
+                "cuisine": "BBQ • Continental",
+                "costForTwo": "₹1700 for two",
+                "location": "Lower Parel, Mumbai",
+                "distance": "5.9 km",
+                "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1681893578/93f0c29bf8c6c0765130eccb070d1baa.webp",
+                "offer": "Flat 20% off on pre-booking",
+                "bankOffer": "Flat 10% off with card payments"
+            },
+            {
+                "id": 7,
+                "name": "Burgers & Co.",
+                "rating": "4.0",
+                "cuisine": "American • Fast Food",
+                "costForTwo": "₹750 for two",
+                "location": "Vashi, Navi Mumbai",
+                "distance": "3.5 km",
+                "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1709129866/8e30becdc080ed8b14814cdaa9c5a89b.jpg",
+                "offer": "Flat 10% off on pre-booking",
+                "bankOffer": "Up to 5% off with select cards"
+            },
+            {
+                "id": 8,
+                "name": "Brew & Bite",
+                "rating": "4.7",
+                "cuisine": "Cafe • Continental",
+                "costForTwo": "₹1200 for two",
+                "location": "Andheri East, Mumbai",
+                "distance": "2.2 km",
+                "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1676627338/27ac29af1386d8143ccde1f87482dd68.jpg",
+                "offer": "Flat 35% off on pre-booking",
+                "bankOffer": "Up to 15% off with bank offers"
+            },
+            {
+                "id": 9,
+                "name": "Royal Kitchen",
+                "rating": "4.3",
+                "cuisine": "North Indian • Mughlai",
+                "costForTwo": "₹1100 for two",
+                "location": "Thane, Mumbai",
+                "distance": "4.8 km",
+                "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1700762449/4519750aa3e13b38a084ebb12e180542.jpg",
+                "offer": "Flat 20% off on pre-booking",
+                "bankOffer": "5% cashback with bank offers"
+            },
+            {
+                "id": 10,
+                "name": "Ice Cream Factory",
+                "rating": "4.6",
+                "cuisine": "Desserts • Ice Cream",
+                "costForTwo": "₹650 for two",
+                "location": "Mulund, Mumbai",
+                "distance": "3.6 km",
+                "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1682412735/c71d83811752c17b3d039370dd6c9542.jpg",
+                "offer": "Flat 10% off on pre-booking",
+                "bankOffer": "10% cashback with select banks"
+            }
+        ]      
+        
     }
     

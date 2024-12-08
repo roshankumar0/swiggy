@@ -17,21 +17,23 @@ const OffersCard = () => {
   ];
 
   return (
-    <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
-      {offers.map((image, index) => {
-        return (
-          <div
-            key={index}
-            className='cursor-pointer'
-          >
-            <img
-              className='w-full h-full object-cover'
-              src={image.companyImage}
-              alt={`offer-${index}`}
-            />
-          </div>
-        );
-      })}
+    <div className='flex justify-center items-center pb-5 px-2'>
+      <div className='flex justify-center max-w-[80%] w-full max-h-[320px] flex-nowrap'>
+        {offers.map((image, index) => {
+          return (
+            <div
+              key={index}
+              className='cursor-pointer'
+            >
+              <img
+                className='w-full h-full object-cover'
+                src={image.companyImage}
+                alt={`offer-${index}`}
+              />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
