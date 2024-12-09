@@ -474,7 +474,153 @@
                 "offer": "Flat 10% off on pre-booking",
                 "bankOffer": "10% cashback with select banks"
             }
-        ]      
-        
+        ],
+            "delivery": [
+              { "city": "Bangalore", "order_food": "Order food online in Bangalore" },
+              { "city": "Gurgaon", "order_food": "Order food online in Gurgaon" },
+              { "city": "Delhi", "order_food": "Order food online in Delhi" },
+              { "city": "Mumbai", "order_food": "Order food online in Mumbai" },
+              { "city": "Pune", "order_food": "Order food online in Pune" },
+              { "city": "Kolkata", "order_food": "Order food online in Kolkata" },
+              { "city": "Chennai", "order_food": "Order food online in Chennai" },
+              { "city": "Hyderabad", "order_food": "Order food online in Hyderabad" },
+              { "city": "Ahmedabad", "order_food": "Order food online in Ahmedabad" },
+              { "city": "Jaipur", "order_food": "Order food online in Jaipur" },
+              { "city": "Lucknow", "order_food": "Order food online in Lucknow" },
+              { "city": "Chandigarh", "order_food": "Order food online in Chandigarh" },
+              { "city": "Noida", "order_food": "Order food online in Noida" },
+              { "city": "Kochi", "order_food": "Order food online in Kochi" },
+              { "city": "Indore", "order_food": "Order food online in Indore" },
+              { "city": "Nagpur", "order_food": "Order food online in Nagpur" },
+              { "city": "Vadodara", "order_food": "Order food online in Vadodara" },
+              { "city": "Coimbatore", "order_food": "Order food online in Coimbatore" },
+              { "city": "Surat", "order_food": "Order food online in Surat" },
+              { "city": "Patna", "order_food": "Order food online in Patna" },
+              { "city": "Visakhapatnam", "order_food": "Order food online in Visakhapatnam" },
+              { "city": "Bhubaneswar", "order_food": "Order food online in Bhubaneswar" },
+              { "city": "Vijayawada", "order_food": "Order food online in Vijayawada" },
+              { "city": "Agra", "order_food": "Order food online in Agra" },
+              { "city": "Kanpur", "order_food": "Order food online in Kanpur" },
+              { "city": "Bhopal", "order_food": "Order food online in Bhopal" },
+              { "city": "Mysore", "order_food": "Order food online in Mysore" },
+              { "city": "Raipur", "order_food": "Order food online in Raipur" },
+              { "city": "Gwalior", "order_food": "Order food online in Gwalior" },
+              { "city": "Aurangabad", "order_food": "Order food online in Aurangabad" },
+              { "city": "Ranchi", "order_food": "Order food online in Ranchi" },
+              { "city": "Meerut", "order_food": "Order food online in Meerut" },
+              { "city": "Dhanbad", "order_food": "Order food online in Dhanbad" },
+              { "city": "Jodhpur", "order_food": "Order food online in Jodhpur" },
+              { "city": "Nashik", "order_food": "Order food online in Nashik" },
+              { "city": "Guwahati", "order_food": "Order food online in Guwahati" },
+              { "city": "Tirunelveli", "order_food": "Order food online in Tirunelveli" },
+              { "city": "Thane", "order_food": "Order food online in Thane" },
+              { "city": "Faridabad", "order_food": "Order food online in Faridabad" },
+              { "city": "Shivamogga", "order_food": "Order food online in Shivamogga" },
+              { "city": "Jammu", "order_food": "Order food online in Jammu" },
+              { "city": "Ranchi", "order_food": "Order food online in Ranchi" },
+              { "city": "Panipat", "order_food": "Order food online in Panipat" },
+              { "city": "Shimla", "order_food": "Order food online in Shimla" },
+              { "city": "Gaya", "order_food": "Order food online in Gaya" },
+              { "city": "Moradabad", "order_food": "Order food online in Moradabad" },
+              { "city": "Bhilai", "order_food": "Order food online in Bhilai" },
+              { "city": "Siliguri", "order_food": "Order food online in Siliguri" },
+              { "city": "Bikaner", "order_food": "Order food online in Bikaner" },
+              { "city": "Udaipur", "order_food": "Order food online in Udaipur" },
+              { "city": "Kolhapur", "order_food": "Order food online in Kolhapur" },
+              { "city": "Durgapur", "order_food": "Order food online in Durgapur" },
+              { "city": "Kolkata", "order_food": "Order food online in Kolkata" },
+              { "city": "Chandrapur", "order_food": "Order food online in Chandrapur" },
+              { "city": "Bhavnagar", "order_food": "Order food online in Bhavnagar" },
+              { "city": "Jalgaon", "order_food": "Order food online in Jalgaon" },
+              { "city": "Vellore", "order_food": "Order food online in Vellore" },
+              { "city": "Mangalore", "order_food": "Order food online in Mangalore" },
+              { "city": "Kannur", "order_food": "Order food online in Kannur" },
+              { "city": "Kozhikode", "order_food": "Order food online in Kozhikode" },
+              { "city": "Chittoor", "order_food": "Order food online in Chittoor" },
+              { "city": "Dehradun", "order_food": "Order food online in Dehradun" },
+              { "city": "Haridwar", "order_food": "Order food online in Haridwar" },
+              { "city": "Bhilwara", "order_food": "Order food online in Bhilwara" },
+              { "city": "Nagapattinam", "order_food": "Order food online in Nagapattinam" },
+              { "city": "Nellore", "order_food": "Order food online in Nellore" },
+              { "city": "Warangal", "order_food": "Order food online in Warangal" },
+              { "city": "Kurnool", "order_food": "Order food online in Kurnool" },
+              { "city": "Satna", "order_food": "Order food online in Satna" },
+              { "city": "Cuttack", "order_food": "Order food online in Cuttack" },
+              { "city": "Chittoor", "order_food": "Order food online in Chittoor" },
+              { "city": "Anantapur", "order_food": "Order food online in Anantapur" },
+              { "city": "Tiruppur", "order_food": "Order food online in Tiruppur" },
+              { "city": "Bharuch", "order_food": "Order food online in Bharuch" },
+              { "city": "Navi Mumbai", "order_food": "Order food online in Navi Mumbai" },
+              { "city": "Aligarh", "order_food": "Order food online in Aligarh" },
+              { "city": "Bhopal", "order_food": "Order food online in Bhopal" },
+              { "city": "Aurangabad", "order_food": "Order food online in Aurangabad" },
+              { "city": "Khammam", "order_food": "Order food online in Khammam" },
+              { "city": "Srinagar", "order_food": "Order food online in Srinagar" },
+              { "city": "Gulbarga", "order_food": "Order food online in Gulbarga" },
+              { "city": "Nanded", "order_food": "Order food online in Nanded" },
+              { "city": "Bijapur", "order_food": "Order food online in Bijapur" },
+              { "city": "Dewas", "order_food": "Order food online in Dewas" },
+              { "city": "Katihar", "order_food": "Order food online in Katihar" }
+            ],
+          "footerData": [
+  {
+    "title": "Company",
+    "items": [
+      "About Us",
+      "Swiggy Corporate",
+      "Careers",
+      "Team",
+      "Swiggy One",
+      "Swiggy Instamart",
+      "Swiggy Dineout",
+      "Swiggy Genie",
+      "Minis"
+    ]
+  },
+  {
+    "title": "Contact Us",
+    "items": [
+      "Contact us",
+      "Help & Support",
+      "Partner with us",
+      "Ride with us"
+    ]
+  },
+  {
+    "title": "Legal",
+    "items": [
+      "Terms & Conditions",
+      "Cookie Policy",
+      "Privacy Policy"
+    ]
+  },
+  {
+    "title": "Available In",
+    "items": [
+      "Bangalore",
+      "Gurgaon",
+      "Hyderabad",
+      "Delhi",
+      "Mumbai",
+      "Pune"
+    ]
+  },
+  {
+    "title": "Life at Swiggy",
+    "items": [
+      "Life at Swiggy",
+      "Explore with Swiggy",
+      "Swiggy News",
+      "Snackables"
+    ]
+  },
+  {
+    "title": "Social Links",
+    "items": [
+      "Social Links"
+    ]
+  }
+]
+       
     }
     

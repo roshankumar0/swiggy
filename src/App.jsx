@@ -1,4 +1,5 @@
 import { useEffect, useState, useMemo } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import BestFoodOptions from './Components/BestFoodOptions';
 import Header from './Components/Header';
@@ -7,6 +8,9 @@ import apiData from '../src/data.json';
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 import OffersCard from './Components/OffersCard';
 import BestRestautent from './Components/BestRestautent';
+import SwiggApp from './Components/SwiggApp';
+import Delivery from './Components/Delivery';
+import Footer from './Components/Footer';
 
 
 function App() {
@@ -38,53 +42,58 @@ function App() {
   }
   return (
     <>
-      <div className='bg-[#ff5200]'>
-        <div className='relative' >
-          <Header />
-          <Search />
-          <OffersCard />
+      <Router>
+        <div className='bg-[#ff5200]'>
+          <div className='relative' >
+            <Header />
+            <Search />
+            <OffersCard />
+          </div>
         </div>
-      </div>
-      <div className='w-[80%] m-auto bg-white'>
-        <div className='mt-[120px]'>
-          <div className='flex justify-between pb-8'>
-            <header>
-              <h2 className='text-[24px] font-semibold text-[#02060ceb] tracking-[0.6px] leading-6'>Order our best food options</h2>
-            </header>
-            <div className='flex gap-3'>
-              <div onClick={handleLeft}>
-                <div onClick={handleLeft} className='rounded-full h-[34px] w-[34px]  bg-[#02060c26] pt-2 pr-2 pb-1 pl-2 '>
-                  <IoIosArrowRoundBack />
+        <div className='w-[80%] m-auto bg-white'>
+          <div className='mt-[120px]'>
+            <div className='flex justify-between pb-8'>
+              <header>
+                <h2 className='text-[24px] font-semibold text-[#02060ceb] tracking-[0.6px] leading-6'>Order our best food options</h2>
+              </header>
+              <div className='flex gap-3'>
+                <div onClick={handleLeft}>
+                  <div onClick={handleLeft} className='rounded-full h-[34px] w-[34px]  bg-[#02060c26] pt-2 pr-2 pb-1 pl-2 '>
+                    <IoIosArrowRoundBack />
+                  </div>
+
                 </div>
-
+                <div onClick={handleRight} className='rounded-full h-[34px] w-[34px]  bg-[#02060c26] pt-2 pr-2 pb-1 pl-2 '>
+                  <IoIosArrowRoundForward />
+                </div>
               </div>
-              <div onClick={handleRight} className='rounded-full h-[34px] w-[34px]  bg-[#02060c26] pt-2 pr-2 pb-1 pl-2 '>
-                <IoIosArrowRoundForward />
+            </div>
+            <div className='overflow-x-auto duration-300'
+              style={{
+                transform: `translateX(-${slide * 100})%`
+              }}
+            >
+              {/* Top Row */}
+              <div className="flex ">
+                {topRow.map((data, index) => {
+                  return <BestFoodOptions key={index} data={data} slide={slide} />;
+                })}
+              </div>
+
+              {/* Bottom Row (Scrollable) */}
+              <div className="flex ">
+                {bottomRow.map((data, index) => {
+                  return <BestFoodOptions key={index} data={data} slide={slide} />;
+                })}
               </div>
             </div>
           </div>
-          <div className='overflow-x-auto duration-300'
-            style={{
-              transform: `translateX(-${slide * 100})%`
-            }}
-          >
-            {/* Top Row */}
-            <div className="flex ">
-              {topRow.map((data, index) => {
-                return <BestFoodOptions key={index} data={data} slide={slide} />;
-              })}
-            </div>
-
-            {/* Bottom Row (Scrollable) */}
-            <div className="flex ">
-              {bottomRow.map((data, index) => {
-                return <BestFoodOptions key={index} data={data} slide={slide} />;
-              })}
-            </div>
-          </div>
+          <BestRestautent />
         </div>
-        <BestRestautent />
-      </div>
+        <SwiggApp />
+        <Delivery />
+        <Footer />
+      </Router>
     </>
   );
 }
