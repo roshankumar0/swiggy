@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'proxima-nova': ['ProximaNova', 'Arial', 'sans-serif'],
+        'proxima-nova-bold': ['ProximaNovaBold', 'Arial', 'sans-serif'],
+        'proxima-nova-light': ['ProximaNovaLight', 'Arial', 'sans-serif'],
+        'proxima-nova-condensed-regular': ['ProximaNovaCondensedRegular', 'Arial', 'sans-serif'],
+        'gilroy-bold': ['Gilroy_Bold', 'Arial', 'sans-serif'],
+        'Gilroy': ['Gilroy', 'Arial', 'sans-serif'],
+        'Proxima-nova-cond': ['ProximaNovaCond', 'Arial', 'sans-serif']
+      },
+    },
   },
   plugins: [],
 }

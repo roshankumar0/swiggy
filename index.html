@@ -1,13 +1,366 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React</title>
+  <style>
+    @font-face {
+      font-family: "ProximaNova";
+      font-weight: 700;
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/700.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/700.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/700.ttf") format("truetype")
+    }
+
+    @font-face {
+      font-family: "ProximaNova";
+      font-weight: 600;
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/600.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/600.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/600.ttf") format("truetype")
+    }
+
+    @font-face {
+      font-family: "ProximaNova";
+      font-weight: 500;
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/500.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/500.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/500.ttf") format("truetype")
+    }
+
+    @font-face {
+      font-family: "ProximaNova";
+      font-weight: 400;
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/400.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/400.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/400.ttf") format("truetype")
+    }
+
+    @font-face {
+      font-family: "ProximaNova";
+      font-weight: 300;
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/300.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/300.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/300.ttf") format("truetype")
+    }
+
+    @font-face {
+      font-family: "ProximaNovaBold";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/bold.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/bold.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/bold.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/bold.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/bold.ttf") format("truetype")
+    }
+
+    @font-face {
+      font-family: "AsapCondensedSemiBold";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/AsapCondensed-SemiBold.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/AsapCondensed-SemiBold.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/AsapCondensed-SemiBold.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/AsapCondensed-SemiBold.ttf") format("truetype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/AsapCondensed-SemiBold.svg#AsapCondensedSemiBold") format("svg");
+      font-style: normal;
+      font-weight: normal
+    }
+
+    @font-face {
+      font-family: "ProximaNovaCondensedBold";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Bold.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Bold.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Bold.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Bold.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Bold.ttf") format("truetype");
+      font-style: normal
+    }
+
+    @font-face {
+      font-family: "ProximaNovaBlack";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/ProximaNovaBlack.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/ProximaNovaBlack.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/ProximaNovaBlack.ttf") format("truetype");
+      font-style: normal
+    }
+
+    @font-face {
+      font-family: "ProximaNovaCondensedBlack";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Black.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Black.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Black.ttf") format("truetype");
+      font-style: normal
+    }
+
+    @font-face {
+      font-family: "ProximaNovaCondensedRegular";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/ProximaNovaCondensedRegular.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/ProximaNovaCondensedRegular.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/ProximaNovaCondensedRegular.ttf") format("truetype");
+      font-style: normal
+    }
+
+    @font-face {
+      font-family: "ProximaNovaExtraBold";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/ProximaNovaBlack.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/ProximaNovaBlack.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/ProximaNovaExtraBold.ttf") format("truetype");
+      font-style: normal
+    }
+
+    @font-face {
+      font-family: "ProximaNovaLight";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/ProximaNovaLight.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/ProximaNovaLight.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/ProximaNovaLight.ttf") format("truetype");
+      font-style: normal
+    }
+
+    @font-face {
+      font-family: "ProximaNovaSemiBold";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/ProximaNovaSemiBold.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/ProximaNovaSemiBold.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ux3/ProximaNovaSemiBold.ttf") format("truetype");
+      font-style: normal
+    }
+
+    @font-face {
+      font-family: "ProximaNovaCondensedExtraBold";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.ttf") format("truetype");
+      font-style: normal
+    }
+
+    @font-face {
+      font-family: "Gilroy";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-ExtraBold-Rupee.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-ExtraBold-Rupee.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-ExtraBold-Rupee.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-ExtraBold-Rupee.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-ExtraBold-Rupee.ttf") format("truetype");
+      font-weight: 800;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*!sc*/
+    @font-face {
+      font-family: "Gilroy";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Bold-Rupee.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Bold-Rupee.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Bold-Rupee.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Bold-Rupee.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Bold-Rupee.ttf") format("truetype");
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*!sc*/
+    @font-face {
+      font-family: "Gilroy";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-SemiBold-Rupee.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-SemiBold-Rupee.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-SemiBold-Rupee.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-SemiBold-Rupee.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-SemiBold-Rupee.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*!sc*/
+    @font-face {
+      font-family: "Gilroy";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Medium-Rupee.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Medium-Rupee.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Medium-Rupee.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Medium-Rupee.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Medium-Rupee.ttf") format("truetype");
+      font-weight: 200;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*!sc*/
+    @font-face {
+      font-family: "ProximaNovaCond";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.ttf") format("truetype");
+      font-weight: 800;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*!sc*/
+    @font-face {
+      font-family: "ProximaNovaCond";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Bold.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Bold.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Bold.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Bold.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Bold.ttf") format("truetype");
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*!sc*/
+    @font-face {
+      font-family: "ProximaNovaCond";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Medium.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Medium.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Medium.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Medium.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Medium.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*!sc*/
+    @font-face {
+      font-family: "Gilroy_Bold";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Bold-Rupee.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Bold-Rupee.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Bold-Rupee.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Bold-Rupee.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Bold-Rupee.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*!sc*/
+    @font-face {
+      font-family: "ProximaNovaCond_Black";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Black.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Black.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Black.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Black.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Black.ttf") format("truetype");
+      font-weight: 800;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*!sc*/
+    @font-face {
+      font-family: "ProximaNovaCond_Extrabold";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "icomoon";
+      src: url("https://media-assets.swiggy.com/swiggy/raw/upload/v1/portal/dweb/icomoon.ttf?eojet8") format("truetype"), url("https://media-assets.swiggy.com/swiggy/raw/upload/v1/portal/dweb/icomoon.woff?eojet8") format("woff"), url("https://media-assets.swiggy.com/swiggy/raw/upload/v1/portal/dweb/icomoon.svg?eojet8#icomoon") format("svg");
+      font-weight: normal;
+      font-style: normal
+    }
+
+    @font-face {
+      font-family: "Gilroy";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-ExtraBold-Rupee.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-ExtraBold-Rupee.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-ExtraBold-Rupee.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-ExtraBold-Rupee.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-ExtraBold-Rupee.ttf") format("truetype");
+      font-weight: 800;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*!sc*/
+    @font-face {
+      font-family: "Gilroy";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Bold-Rupee.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Bold-Rupee.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Bold-Rupee.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Bold-Rupee.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Bold-Rupee.ttf") format("truetype");
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*!sc*/
+    @font-face {
+      font-family: "Gilroy";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-SemiBold-Rupee.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-SemiBold-Rupee.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-SemiBold-Rupee.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-SemiBold-Rupee.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-SemiBold-Rupee.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*!sc*/
+    @font-face {
+      font-family: "Gilroy";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Medium-Rupee.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Medium-Rupee.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Medium-Rupee.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Medium-Rupee.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Medium-Rupee.ttf") format("truetype");
+      font-weight: 200;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*!sc*/
+    @font-face {
+      font-family: "ProximaNovaCond";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.ttf") format("truetype");
+      font-weight: 800;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*!sc*/
+    @font-face {
+      font-family: "ProximaNovaCond";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Bold.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Bold.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Bold.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Bold.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Bold.ttf") format("truetype");
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*!sc*/
+    @font-face {
+      font-family: "ProximaNovaCond";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Medium.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Medium.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Medium.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Medium.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Medium.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*!sc*/
+    @font-face {
+      font-family: "Gilroy_Bold";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Bold-Rupee.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Bold-Rupee.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Bold-Rupee.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Bold-Rupee.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-Bold-Rupee.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*!sc*/
+    @font-face {
+      font-family: "ProximaNovaCond_Black";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Black.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Black.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Black.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Black.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Black.ttf") format("truetype");
+      font-weight: 800;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*!sc*/
+    @font-face {
+      font-family: "ProximaNovaCond_Extrabold";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "ProximaNovaCond";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.ttf") format("truetype");
+      font-weight: 800;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*!sc*/
+    @font-face {
+      font-family: "ProximaNovaCond";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Bold.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Bold.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Bold.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Bold.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Bold.ttf") format("truetype");
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*!sc*/
+    @font-face {
+      font-family: "ProximaNovaCond";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Medium.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Medium.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Medium.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Medium.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Medium.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*!sc*/
+    @font-face {
+      font-family: "ProximaNovaCond_Black";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Black.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Black.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Black.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Black.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Black.ttf") format("truetype");
+      font-weight: 800;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*!sc*/
+    @font-face {
+      font-family: "ProximaNovaCond_Extrabold";
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.eot");
+      src: url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.eot?#iefix") format("embedded-opentype"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.woff2") format("woff2"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.woff") format("woff"), url("https://media-assets.swiggy.com/dls-web-assets/dls/fonts/ProximaNovaCond-Extrabld.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /*!sc*/
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>

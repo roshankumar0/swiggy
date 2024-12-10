@@ -7,7 +7,7 @@ const BestRestautent = () => {
     return (
         <main className='bg-white mt-[120px]'>
             <header className='flex justify-between pb-8'>
-                <h2 className='text-[24px] font-semibold text-[#02060ceb] tracking-[0.6px] leading-6'>Discover best restaurants on Dineout</h2>
+                <h2 className='text-[24px] font-bold font-Gilroy text-[#02060ceb] tracking-[0.6px] leading-6'>Discover best restaurants on Dineout</h2>
                 <div className='flex gap-3'>
                     <div >
                         <div className='rounded-full h-[34px] w-[34px]  bg-[#02060c26] pt-2 pr-2 pb-1 pl-2 '>
@@ -33,8 +33,8 @@ const BestRestautent = () => {
                                         alt={data.name}
                                     />
                                     <figcaption className="absolute bg-gradient-to-t from-black to-transparent flex w-full text-white h-[50px] justify-between pt-4 pr-3 pb-3 pl-3">
-                                        <p>{data.name}</p>
-                                        <p className='flex items-center'><span><svg width={16} height={16} viewBox="0 0 16 16" fill="none" role="img">
+                                        <p className='font-Gilroy text-[20px]'>{data.name}</p>
+                                        <p className='flex items-center font-ProximaNovaCond'><span><svg width={16} height={16} viewBox="0 0 16 16" fill="none" role="img">
                                             <circle
                                                 cx="8.00005"
                                                 cy="7.99999"
@@ -65,29 +65,29 @@ const BestRestautent = () => {
                             </figure>
 
                             <section className="text-[#02060c99] pt-2 pr-3 pb-3 pl-3">
-                                <div className="flex justify-between">
+                                <div className="flex justify-between font-Gilroy">
                                     <p>{data.location}</p>
                                     <p>{data.costForTwo}</p>
                                 </div>
-                                <address className="flex text-[#02060c99] justify-between">
+                                <div className="flex text-[#02060c99] justify-between font-Gilroy">
                                     <p>{data.cuisine}</p>
                                     <p>{data.distance}</p>
-                                </address>
+                                </div>
 
-                                <div className="flex gap-1">
+                                <div className="flex gap-1 font-Proxima-nova-cond text-[13px]">
                                     <p className='bg-[#f0f0f5] gap-[2px] rounded-[12px] py-[2px] px-2 flex items-center'><span><img className='h-3 w-3 object-contain' src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/dineout/rx-card/highlights/book.png" alt="" /></span><span>Table booking</span></p>
                                     <p className='bg-[#f0f0f5] gap-[2px] rounded-[12px] py-[2px] flex items-center px-2'><span><img className='h-3 w-3 object-contain' src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/dineout/rx-card/highlights/tag2.png" alt="" /></span><span>Free Desert</span></p>
                                 </div>
 
-                                <section className="flex justify-between items-center mt-3 bg-[#1ba672] rounded-[8px] text-white px-2 h-9">
-                                    <div className='flex gap-1 items-center items-center'>
+                                <section className="flex justify-between items-center mt-3 bg-[#1ba672] rounded-[8px] text-white px-2 h-9 font-Proxima-nova-cond text-[16px]">
+                                    <div className='flex gap-1 items-center'>
                                         <img className='h-5 w-[26px] object-contain' src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/dineout/rx-card/OFFER.png" alt="" />
                                         <p>{data.offer}</p>
                                     </div>
                                     <div>+3</div>
                                 </section>
 
-                                <section className="bg-[#c8f9e5] rounded-[8px] text-[#1ba672] px-2 h-9 mt-3 pl-2 flex items-center">
+                                <section className="bg-[#c8f9e5] font-Proxima-nova-cond rounded-[8px] text-[#1ba672] px-2 h-9 mt-3 pl-2 flex items-center">
                                     <p>{data.bankOffer}</p>
                                 </section>
                             </section>

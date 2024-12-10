@@ -6,15 +6,13 @@
 ::-webkit-scrollbar {
     width: 8px;  /* Adjust width of the scrollbar (optional) */
     height: 8px; /* Adjust height of the scrollbar (optional) */
-  }
+}
   
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color: transparent; /* Hide the thumb */
     border-radius: 10px;
-  }
+}
   
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: transparent; /* Optional: make track transparent */
-  }
-  
-  
+}

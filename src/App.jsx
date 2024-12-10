@@ -54,7 +54,7 @@ function App() {
           <div className='mt-[120px]'>
             <div className='flex justify-between pb-8'>
               <header>
-                <h2 className='text-[24px] font-semibold text-[#02060ceb] tracking-[0.6px] leading-6'>Order our best food options</h2>
+                <h2 className='text-[24px] font-semibold font-Gilroy text-[#02060ceb] tracking-[0.6px] leading-6'>Order our best food options</h2>
               </header>
               <div className='flex gap-3'>
                 <div onClick={handleLeft}>

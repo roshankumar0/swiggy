@@ -584,18 +584,18 @@
       "Help & Support",
       "Partner with us",
       "Ride with us"
-    ]
+
+
+    ],
+    "title2":"Legal",
+            "items2": [
+              "Terms & Conditions",
+              "Cookie Policy",
+              "Privacy Policy"
+            ]
   },
   {
-    "title": "Legal",
-    "items": [
-      "Terms & Conditions",
-      "Cookie Policy",
-      "Privacy Policy"
-    ]
-  },
-  {
-    "title": "Available In",
+    "title": "Available In:",
     "items": [
       "Bangalore",
       "Gurgaon",
@@ -612,15 +612,14 @@
       "Explore with Swiggy",
       "Swiggy News",
       "Snackables"
-    ]
-  },
-  {
-    "title": "Social Links",
-    "items": [
-      "Social Links"
+    ],
+    "title2":"Social Links",
+    "items2":[
+        "Instgram",
+        "Facebook",
+        "Twitter"
     ]
   }
 ]
-       
-    }
+   }
     
