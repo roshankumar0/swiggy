@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { IoSearchSharp, IoHelp, IoBagOutline } from "react-icons/io5";
 import { BiSolidOffer, BiUser, BiCart } from "react-icons/bi";
+import AccountSettings from './Components/AccountSettings';
 
 
 const MyAccount = () => {
-  const [selected, setSelected] = useState(0)
+  const [selected, setSelected] = useState(4)
   const accountList = [
     {
       name: "My Account",
@@ -61,18 +62,36 @@ const MyAccount = () => {
     const displayName = item.type === 'user' && item.name.length > 10 ? item.name.slice(0, 8) + '...' : item.name
     return <li
       onClick={() => setSelected(index)}
-      className={`flex cursor-pointer items-center mr-[50px]`}
+      className={`flex cursor-pointer items-center mr-[50px] font-proxima-nova`}
       key={index}>
       {item.logo && <div>{item.logo}</div>}
-      {displayName && <span className='flex items-center gap-2'><span>{item.icon}</span>{item.count && <span>{item.count}</span>}<span className={`${selected === index ? "text-[#ff5200]" : ""}`}>{displayName}</span>{item.badge && <sup className='text-[#ffa700]'>{item.badge}</sup>}</span>}
-    </li>
+      {displayName && <span className={`flex items-center gap-2 ${displayName === "My Account"?"font-bold":""}`}><span>{item.icon}</span>{item.count && <span>{item.count}</span>}<span className={`${selected === index ? "text-[#ff5200]" : ""}`}>{displayName}</span>{item.badge && <sup className='text-[#ffa700]'>{item.badge}</sup>}</span>
   }
-  return (
-    <header className='flex justify-between max-w-[1200px] m-auto h-20'>
+    </li >
+  }
+return (
+  <div>
+    <header className='flex justify-between h-20 max-w-[1200px] min-w-[1200px]  m-auto'>
       <ul className='flex'>{accountList.slice(0, 1).map((item, index) => renderAccountHelper(item, index))}</ul>
       <ul className='flex text-[#3d4152] font-medium text-[16px]'>{accountList.slice(1).map((item, index) => renderAccountHelper(item, index))}</ul>
     </header>
-  )
+    <div className='bg-[#37718e]'>
+      <div className='relative px-5 max-w-[1200px] min-w-[1200px]  m-auto'>
+        <div className='pt-5 relative my-[37px] text-[#FFFFFF] font-proxima-nova'>
+          <div className='absolute right-0 mb-[7px] border border-[fff9] px-5 py-3 text-[14px]'><button>Edit profile</button></div>
+          <div className='text-[32px]'>
+            Roshan kumar
+          </div>
+          <div>
+            <span>9650730925</span>
+            <span className='ml-[15px]'>roshankumar40786@gmail.com</span>
+          </div>
+        </div>
+        <AccountSettings />
+      </div>
+    </div>
+  </div>
+)
 }
 
 export default MyAccount

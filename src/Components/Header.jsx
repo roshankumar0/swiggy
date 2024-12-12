@@ -44,7 +44,7 @@ const Header = () => {
     setHovered(false);
   }, []);
 
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const handleNavigate = (item) => {
     if (item === "Profile") {
@@ -53,7 +53,7 @@ const Header = () => {
   };
 
   return (
-    <header className="py-8">
+    <header className="py-8 max-w[1200px] min-w[1200px]">
       <div className="flex items-center justify-between w-[80%] m-auto">
         <div className="h-[48px] w-[160px] cursor-pointer">
           <img
@@ -66,9 +66,8 @@ const Header = () => {
             {navLinks.map((nav, index) => (
               <li
                 key={index}
-                className={`flex items-center font-Gilroy cursor-pointer tracking[-.4px] leading-[21px] ${
-                  nav.link ? "border h-[54px] py-3 rounded-[12px] px-4" : ""
-                }`}
+                className={`flex items-center font-Gilroy cursor-pointer tracking[-.4px] leading-[21px] ${nav.link ? "border h-[54px] py-3 rounded-[12px] px-4" : ""
+                  }`}
               >
                 {nav.navItem} {nav.link}
               </li>
