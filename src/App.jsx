@@ -12,6 +12,7 @@ import SwiggApp from './Components/SwiggApp';
 import Delivery from './Components/Delivery';
 import Footer from './Components/Footer';
 import MyAccount from './MyAccount';
+import Login from './Login';
 
 function App() {
   const [data, setData] = useState([]);
@@ -40,9 +41,9 @@ function App() {
     if (bestFoodOptions.length - 6 === slide) return false;
     setSlide(slide + 3);
   };
-  useEffect(() => {
-    navigate("/")
-  }, [])
+  // useEffect(() => {
+  //   navigate("/")
+  // }, [])
   return (
     <Routes>
       <Route
@@ -98,6 +99,7 @@ function App() {
         }
       />
       <Route path='/my-account' element={<MyAccount />} />
+      <Route path='/login' element={<Login />} />
     </Routes>
   );
 }

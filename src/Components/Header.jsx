@@ -1,39 +1,37 @@
 import { useCallback, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [hovered, setHovered] = useState(false);
   const navLinks = [
     {
-      link: "",
+      link: "/corporate",
       navItem: "Swiggy Corporate",
     },
     {
-      link: "",
+      link: "/login",
       navItem: "Partner with us",
     },
     {
-      link: (
-        <svg
-          width={21}
-          height={21}
-          viewBox="0 0 21 21"
-          fill="none"
-          aria-label="rating-up-down-icon"
-          aria-hidden="false"
-          stroke="#FFFFFF"
-        >
-          <path
-            d="M12.634 3.45a1 1 0 0 0-1.365 1.462l4.827 4.506c.238.221.44.41.614.577H2.996a1 1 0 0 0 0 2h13.777c-.186.18-.41.39-.677.64l-4.769 4.45a1 1 0 0 0 1.365 1.462l4.817-4.495c.546-.51 1.03-.96 1.367-1.376.365-.449.664-.979.664-1.65 0-.672-.299-1.201-.664-1.65-.338-.415-.821-.866-1.367-1.376z"
-            fill="#FFFFFF"
-            fillOpacity="0.92"
-          />
-        </svg>
-      ),
+      link: "/get-the-app",
       navItem: "Get the App",
+      icon: <svg
+        width={21}
+        height={21}
+        viewBox="0 0 21 21"
+        fill="none"
+        aria-label="rating-up-down-icon"
+        aria-hidden="false"
+        stroke="#FFFFFF"
+      >
+        <path
+          d="M12.634 3.45a1 1 0 0 0-1.365 1.462l4.827 4.506c.238.221.44.41.614.577H2.996a1 1 0 0 0 0 2h13.777c-.186.18-.41.39-.677.64l-4.769 4.45a1 1 0 0 0 1.365 1.462l4.817-4.495c.546-.51 1.03-.96 1.367-1.376.365-.449.664-.979.664-1.65 0-.672-.299-1.201-.664-1.65-.338-.415-.821-.866-1.367-1.376z"
+          fill="#FFFFFF"
+          fillOpacity="0.92"
+        />
+      </svg>
     },
   ];
-
   const userList = ["Profile", "Order", "Swiggy One", "Favourites", "Logout"];
 
   const handleMouseEnter = useCallback(() => {
@@ -66,10 +64,10 @@ const Header = () => {
             {navLinks.map((nav, index) => (
               <li
                 key={index}
-                className={`flex items-center font-Gilroy cursor-pointer tracking[-.4px] leading-[21px] ${nav.link ? "border h-[54px] py-3 rounded-[12px] px-4" : ""
+                className={`flex items-center font-Gilroy cursor-pointer tracking[-.4px] leading-[21px] ${nav.icon ? "border h-[54px] py-3 rounded-[12px] px-4" : ""
                   }`}
               >
-                {nav.navItem} {nav.link}
+                <Link to={nav.link} >{nav.navItem}</Link> {nav.icon}
               </li>
             ))}
             <li className="relative">

@@ -67,7 +67,7 @@ const AccountSettings = () => {
                 <li
                     key={index}
                     onClick={() => setSelectedIndex(index)}
-                    className={`py-[25px] px-5 ml-5 cursor-pointer font-proxima-nova ${isSelected ? "bg-[#fff] font-semibold text-[#282c3f]" : ""}`}>
+                    className={`py-[25px] px-5 ml-5 cursor-pointer font-proxima-nova ${isSelected ? "bg-[#fff] font-semibold text-[#282c3f]" : " hover:font-bold text-[#282c3f] font-semibold"}`}>
                     {item.name}
                 </li>
             );
