@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     const animated = [
@@ -31,7 +32,14 @@ const Login = () => {
             description: "Enter restaurant details and for an easy form filling process, you can keep these documents handy."
         }
     ];
-
+    const documents = [
+        { title: 'For an easy form filling process,', subtitle: 'you can keep these documents handy.' },
+        { title: 'FSSAI License copy', action: 'Apply Here' },
+        { title: 'Your Restaurant menu' },
+        { title: 'Bank details' },
+        { title: 'GSTIN', action: 'Apply Here' },
+        { title: 'PAN card copy' },
+    ];
     const [currentIndex, setCurrentIndex] = useState(0);
     const [visibleTitles, setVisibleTitles] = useState([]);
     useEffect(() => {
@@ -52,7 +60,7 @@ const Login = () => {
 
     return (
         <>
-            <section className="flex justify-center" style={{
+            <section className="flex justify-center font-Gilroy" style={{
                 backgroundImage: 'url("https://vendor-media-assets.swiggy.com/static-assets/images/PartnerBG.png")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
@@ -103,18 +111,56 @@ const Login = () => {
                 </article>
             </section>
 
-            <section>
-                <article>
-                    <p>In just 3 easy steps</p>
-                    <h3>Get your restaurant delivery-ready in 24hrs!</h3>
-                    <ul className='before:absolute before:w-[1px] before:border before:border-dashed before:border-[#02060c26]'>
-                        {steps.map((step, index) => (
-                            <li key={index} className="flex flex-col  before:h-[14px] before:w-[14px] before:bg-[#6541e4] before:rounded-full">
-                                <div>{step.title}</div>
-                                <div>{step.description}</div>
-                            </li>
-                        ))}
-                    </ul>
+            <section className='flex items-center py-6 px-8 gap-6 justify-center font-Gilroy'>
+                <article className=' max-w-[508px]'>
+                    <p className='text-[#02060c73] text-[16px] leading-[21px] tracking-[-0.4px]'>In just 3 easy steps</p>
+                    <h3 className='text-[#02060cbf] text-[20px] font-extrabold tracking-[-0.5px] leading-6'>Get your restaurant delivery-ready in 24hrs!</h3>
+                    <div className='bg-[#f0f0f5] pt-[24px] pr-[100px] pb-[24px] pl-[16px] rounded-[16px]'>
+                        <ul className='relative pl-5 gap-6 flex flex-col custom__steps'>
+                            {steps.map((step, index) => (
+                                <li key={index} className="custom__steps__li">
+                                    <div className='text-[#02060c99] text-[12px] leading-[16px] tracking-[-0.3px] font-extralight'>{step.title}</div>
+                                    <div className='text-[#02060cbf] text-[18px] leading-[21px] tracking-[-0.45px] font-semibold'>{step.description}</div>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </article>
+                <article className='max-w-[612px] flex-1 p-8 flex flex-col gap-4'
+                    style={
+                        {
+                            backgroundImage: 'url("https://vendor-media-assets.swiggy.com/static-assets/icons/paper.svg")',
+                            backgroundRepeat: "no-repeat"
+                        }
+                    }
+                >
+                    {
+                        documents.map((document, __i) => {
+                            const { title, subtitle, action } = document;
+                            return (
+                                <div key={__i} className='flex flex-col'>
+                                    {title && subtitle && (
+                                        <div className='text-[14px]'>
+                                            <p className='text-[#02060cbf] text-[14px] leading-[18px] tracking-[-0.35px] font-semibold'>{title}</p>
+                                            <p className='text-[#02060c99] text-[14px] leading-[18px] tracking-[-0.35px] font-extralight'>{subtitle}</p>
+                                        </div>
+                                    )}
+
+                                    <ul className='flex text-[16px] gap-4 list-none p-0 m-0'>
+                                        <li className="flex gap-3 text-[#02060cbf] text-[16px] leading-[21px] tracking-[-0.4px] font-semibold">
+                                            <p>{title}</p>
+                                            {action && (
+                                                <span className='text-[#ff5200] underline  text-[#02060cbf] text-[16px] leading-[21px] tracking-[-0.4px] font-extralight'>
+                                                    <Link to='/'>{action}</Link>
+                                                </span>
+                                            )}
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            );
+                        })
+                    }
                 </article>
             </section>
         </>

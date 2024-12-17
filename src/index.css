@@ -16,3 +16,23 @@
 ::-webkit-scrollbar-track {
     background: transparent; /* Optional: make track transparent */
 }
+.custom__steps::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    border: 1px dashed #02060c26;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+.custom__steps__li::before{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: rgb(101, 65, 228);
+    border: 2px solid rgb(240, 240, 245);
+    border-radius: 50%;
+    z-index: 1;
+    left: -6px;
+}
