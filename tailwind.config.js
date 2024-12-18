@@ -13,7 +13,11 @@ export default {
         'proxima-nova-condensed-regular': ['ProximaNovaCondensedRegular', 'Arial', 'sans-serif'],
         'gilroy-bold': ['Gilroy_Bold', 'Arial', 'sans-serif'],
         'Gilroy': ['Gilroy', 'Arial', 'sans-serif'],
-        'Proxima-nova-cond': ['ProximaNovaCond', 'Arial', 'sans-serif']
+        'Proxima-nova-cond': ['ProximaNovaCond', 'Arial', 'sans-serif'],
+        'ProximaNova-Medium': ['ProximaNova-Medium', 'Arial', 'sans-serif'],
+        'Gilroy-ExtraBold-Rupee': ['Gilroy-ExtraBold-Rupee', 'Arial', 'sans-serif'],
+        'Gilroy-Medium-Rupee': ['Gilroy-Medium-Rupee', 'Arial', 'sans-serif'],
+        'ProximaNova-Bold': ['ProximaNova-Bold', 'Arial', 'sans-serif']
       },
     },
   },
