@@ -99,8 +99,8 @@ const Login = () => {
                     ))}
                 </article>
                 <article className="py-[20px] px-[27px] bg-[#ffffff] rounded-[20px] m-[10px] w-[23.4375rem]">
-                    <header className="text-[#2a3a50] font-proxima-nova-bold tracking-[-0.1px] text-[24px]">
-                        <h2 className='font-proxima-nova-bold tracking-[-0.1px] text-[#2a3a50] text-2xl font-bold'>Get Started</h2>
+                    <header className="text-[#2a3a50] font-ProximaNovaBoldd tracking-[-0.1px] text-[24px]">
+                        <h2 className='font-ProximaNovaBoldd tracking-[-0.1px] text-[#2a3a50] text-2xl font-bold'>Get Started</h2>
                     </header>
                     <section className="pt-[27px]">
                         <div className="flex  justify-between gap-1">

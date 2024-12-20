@@ -13,7 +13,8 @@ import Delivery from './Components/Delivery';
 import Footer from './Components/Footer';
 import MyAccount from './MyAccount';
 import Login from './Login';
-
+import SearchPage from './pages/Search';
+import Corporate from './pages/corporat'
 function App() {
   const [data, setData] = useState([]);
   const [slide, setSlide] = useState(0);
@@ -100,6 +101,8 @@ function App() {
       />
       <Route path='/my-account' element={<MyAccount />} />
       <Route path='/login' element={<Login />} />
+      <Route path='/search' element={<SearchPage/>} />
+      <Route path='/corporate' element={<Corporate/>} />
     </Routes>
   );
 }

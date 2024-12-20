@@ -74,12 +74,12 @@ const BestRestautent = () => {
                                     <p>{data.distance}</p>
                                 </div>
 
-                                <div className="flex gap-1 font-Proxima-nova-cond text-[13px]">
+                                <div className="flex gap-1 font-ProximaNovaCond text-[13px]">
                                     <p className='bg-[#f0f0f5] gap-[2px] rounded-[12px] py-[2px] px-2 flex items-center'><span><img className='h-3 w-3 object-contain' src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/dineout/rx-card/highlights/book.png" alt="" /></span><span>Table booking</span></p>
                                     <p className='bg-[#f0f0f5] gap-[2px] rounded-[12px] py-[2px] flex items-center px-2'><span><img className='h-3 w-3 object-contain' src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/dineout/rx-card/highlights/tag2.png" alt="" /></span><span>Free Desert</span></p>
                                 </div>
 
-                                <section className="flex justify-between items-center mt-3 bg-[#1ba672] rounded-[8px] text-white px-2 h-9 font-Proxima-nova-cond text-[16px]">
+                                <section className="flex justify-between items-center mt-3 bg-[#1ba672] rounded-[8px] text-white px-2 h-9 font-ProximaNovaCond text-[16px]">
                                     <div className='flex gap-1 items-center'>
                                         <img className='h-5 w-[26px] object-contain' src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/dineout/rx-card/OFFER.png" alt="" />
                                         <p>{data.offer}</p>
@@ -87,7 +87,7 @@ const BestRestautent = () => {
                                     <div>+3</div>
                                 </section>
 
-                                <section className="bg-[#c8f9e5] font-Proxima-nova-cond rounded-[8px] text-[#1ba672] px-2 h-9 mt-3 pl-2 flex items-center">
+                                <section className="bg-[#c8f9e5] font-ProximaNovaCond rounded-[8px] text-[#1ba672] px-2 h-9 mt-3 pl-2 flex items-center">
                                     <p>{data.bankOffer}</p>
                                 </section>
                             </section>

@@ -51,7 +51,7 @@ const Header = () => {
   };
 
   return (
-    <header className="py-8 max-w[1200px] min-w[1200px]">
+    <header className="py-8">
       <div className="flex items-center justify-between w-[80%] m-auto">
         <div className="h-[48px] w-[160px] cursor-pointer">
           <img
@@ -102,7 +102,7 @@ const Header = () => {
                 <ul className="absolute z-10 bg-white w-[220px] text-black font-Gilroy transform -translate-x-1/2 left-1/2 transition-all duration-200 border-t-[2px] border-red-500">
                   {userList.map((item, __) => (
                     <li
-                      onClick={() => handleNavigate(item)} // Corrected onClick to trigger navigation
+                      onClick={() => handleNavigate(item)} 
                       className="py-2 px-4 cursor-pointer"
                       key={__}
                     >

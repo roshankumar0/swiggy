@@ -7,17 +7,19 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'proxima-nova': ['ProximaNova', 'Arial', 'sans-serif'],
-        'proxima-nova-bold': ['ProximaNovaBold', 'Arial', 'sans-serif'],
-        'proxima-nova-light': ['ProximaNovaLight', 'Arial', 'sans-serif'],
-        'proxima-nova-condensed-regular': ['ProximaNovaCondensedRegular', 'Arial', 'sans-serif'],
-        'gilroy-bold': ['Gilroy_Bold', 'Arial', 'sans-serif'],
+        'ProximaNova': ['ProximaNova', 'Arial', 'sans-serif'],
+        'ProximaNovaBold': ['ProximaNovaBold', 'Arial', 'sans-serif'],
+        'ProximaNovaLight': ['ProximaNovaLight', 'Arial', 'sans-serif'],
+        'ProximaNovaCondensedRegular': ['ProximaNovaCondensedRegular', 'Arial', 'sans-serif'],
+        'Gilroy_Bold': ['Gilroy_Bold', 'Arial', 'sans-serif'],
         'Gilroy': ['Gilroy', 'Arial', 'sans-serif'],
-        'Proxima-nova-cond': ['ProximaNovaCond', 'Arial', 'sans-serif'],
+        'ProximaNovaCond': ['ProximaNovaCond', 'Arial', 'sans-serif'],
         'ProximaNova-Medium': ['ProximaNova-Medium', 'Arial', 'sans-serif'],
         'Gilroy-ExtraBold-Rupee': ['Gilroy-ExtraBold-Rupee', 'Arial', 'sans-serif'],
         'Gilroy-Medium-Rupee': ['Gilroy-Medium-Rupee', 'Arial', 'sans-serif'],
-        'ProximaNova-Bold': ['ProximaNova-Bold', 'Arial', 'sans-serif']
+        'ProximaNova-Bold': ['ProximaNova-Bold', 'Arial', 'sans-serif'],
+        'ProximaNovaExtraBold': ['ProximaNovaExtraBold', 'Arial', 'sans-serif'],
+        'CustomFont': ['CustomFont', 'Arial', 'sans-serif'],
       },
     },
   },

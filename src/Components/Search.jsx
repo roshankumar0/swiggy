@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { CiLocationOn, CiSearch } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
+import { useNavigate } from 'react-router-dom';
 
 const Search = () => {
+    const navigate = useNavigate()
+    const handleNavigate=()=>{
+        navigate('/search')
+    }
     return (
         <div className='relative pt-16 pb-8'>
             <img className='h-[450px] w-[250px] absolute top-0' src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Veggies_new.png" alt="" />
@@ -17,7 +22,7 @@ const Search = () => {
                         <IoIosArrowDown size={24} />
                     </div>
                 </div>
-                <div className=' pl-4 w-[500px] flex justify-between bg-white items-center rounded-[16px] px-[16px] gap-[10px] border-[1.5px] border-[#02060C26]'>
+                <div onClick={handleNavigate} className=' pl-4 w-[500px] flex justify-between bg-white items-center rounded-[16px] px-[16px] gap-[10px] border-[1.5px] border-[#02060C26]'>
                     <span className='text-[18px] leading-[24px] tracking-[-0.3px] font-extralight text-[#02060c73] font-Gilroy'>Search for restaurant, item or more</span>
                     <div>
                         <CiSearch size={24} />
