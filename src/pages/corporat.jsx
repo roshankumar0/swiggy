@@ -1,5 +1,6 @@
 import React from 'react';
 import CorporateNavbar from '../Components/CorporateNavbar';
+import About from '../Components/About';
 
 const corporat = () => {
   const imageUrls = [
@@ -31,6 +32,7 @@ const corporat = () => {
           ))}
         </div>
       </div>
+      <About/>
     </div>
   );
 };
