@@ -16,11 +16,11 @@ const MyAccount = () => {
           <div className='pt-5 relative mb-[37px] text-[#FFFFFF] font-proxima-nova'>
             <div className='absolute right-0 mb-[7px] border border-[fff9] px-5 py-3 text-[14px]'><button>Edit profile</button></div>
             <div className='text-[32px]'>
-              Roshan kumar
+               kumar
             </div>
             <div>
               <span>9650730925</span>
-              <span className='ml-[15px]'>roshankumar40786@gmail.com</span>
+              <span className='ml-[15px]'>kumar40786@gmail.com</span>
             </div>
           </div>
           <AccountSettings />

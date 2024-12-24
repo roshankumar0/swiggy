@@ -23,13 +23,13 @@ const SwiggyJourney = () => {
                         </svg>
                     </span>
 
-                    <span className="box-border text-white self-center text-[22px] font-medium tracking-[-0.55px] leading-[29px] transition-[color] duration-[0.3s] block text-left">
+                    <span className=" text-white self-center text-[22px] font-medium tracking-[-0.55px] leading-[29px] transition-[color] duration-[0.3s] block text-left">
                         Launch of our Food Delivery business
                     </span>
                     <img loading="lazy" decoding="async" width={594} height={739} src="https://www.swiggy.com/corporate/wp-content/uploads/2024/10/Food-2.webp" alt="" srcSet="
     https://www.swiggy.com/corporate/wp-content/uploads/2024/10/Food-2.webp         594w,
     https://www.swiggy.com/corporate/wp-content/uploads/2024/10/Food-2-241x300.webp 241w
-  " sizes="auto, (max-width: 594px) 100vw, 594px" className="box-border h-[167.95px] max-w-full text-[rgb(51,51,51)] break-inside-auto inline-block align-middle w-[135px] text-center text-[16px] font-normal leading-[24px] rounded-none" />
+  " sizes="auto, (max-width: 594px) 100vw, 594px" className=" h-[167.95px] max-w-full text-[rgb(51,51,51)] break-inside-auto inline-block align-middle w-[135px] text-center text-[16px] font-normal leading-[24px] rounded-none" />
 
                 </div>
                 <div className=" text-[rgb(51,51,51)] relative self-auto flex-[1_0_auto] order-none items-center gap-[72px] h-[297.55px] min-h-[auto] min-w-0 overflow-visible w-[739.5px] z-auto text-start flex text-[16px] font-normal leading-[24px] rounded-[40px] border-[0.8px] border-solid border-[rgb(84,100,120)]" >
@@ -48,13 +48,13 @@ const SwiggyJourney = () => {
                         </svg>
                     </span>
 
-                    <span className="box-border text-white self-center text-[22px] font-medium tracking-[-0.55px] leading-[29px] transition-[color] duration-[0.3s] block text-left">
+                    <span className=" text-white self-center text-[22px] font-medium tracking-[-0.55px] leading-[29px] transition-[color] duration-[0.3s] block text-left">
                         Launch of our Food Delivery business
                     </span>
                     <img loading="lazy" decoding="async" width={594} height={739} src="https://www.swiggy.com/corporate/wp-content/uploads/2024/10/Food-2.webp" alt="" srcSet="
     https://www.swiggy.com/corporate/wp-content/uploads/2024/10/Food-2.webp         594w,
     https://www.swiggy.com/corporate/wp-content/uploads/2024/10/Food-2-241x300.webp 241w
-  " sizes="auto, (max-width: 594px) 100vw, 594px" className="box-border h-[167.95px] max-w-full text-[rgb(51,51,51)] break-inside-auto inline-block align-middle w-[135px] text-center text-[16px] font-normal leading-[24px] rounded-none" />
+  " sizes="auto, (max-width: 594px) 100vw, 594px" className=" h-[167.95px] max-w-full text-[rgb(51,51,51)] break-inside-auto inline-block align-middle w-[135px] text-center text-[16px] font-normal leading-[24px] rounded-none" />
 
                 </div>
                 <div className=" text-[rgb(51,51,51)] relative self-auto flex-[1_0_auto] order-none items-center gap-[72px] h-[297.55px] min-h-[auto] min-w-0 overflow-visible w-[739.5px] z-auto text-start flex text-[16px] font-normal leading-[24px] rounded-[40px] border-[0.8px] border-solid border-[rgb(84,100,120)]" >
@@ -73,13 +73,13 @@ const SwiggyJourney = () => {
                         </svg>
                     </span>
 
-                    <span className="box-border text-white self-center text-[22px] font-medium tracking-[-0.55px] leading-[29px] transition-[color] duration-[0.3s] block text-left">
+                    <span className=" text-white self-center text-[22px] font-medium tracking-[-0.55px] leading-[29px] transition-[color] duration-[0.3s] block text-left">
                         Launch of our Food Delivery business
                     </span>
                     <img loading="lazy" decoding="async" width={594} height={739} src="https://www.swiggy.com/corporate/wp-content/uploads/2024/10/Food-2.webp" alt="" srcSet="
     https://www.swiggy.com/corporate/wp-content/uploads/2024/10/Food-2.webp         594w,
     https://www.swiggy.com/corporate/wp-content/uploads/2024/10/Food-2-241x300.webp 241w
-  " sizes="auto, (max-width: 594px) 100vw, 594px" className="box-border h-[167.95px] max-w-full text-[rgb(51,51,51)] break-inside-auto inline-block align-middle w-[135px] text-center text-[16px] font-normal leading-[24px] rounded-none" />
+  " sizes="auto, (max-width: 594px) 100vw, 594px" className=" h-[167.95px] max-w-full text-[rgb(51,51,51)] break-inside-auto inline-block align-middle w-[135px] text-center text-[16px] font-normal leading-[24px] rounded-none" />
 
                 </div>
                 <div className=" text-[rgb(51,51,51)] relative self-auto flex-[1_0_auto] order-none items-center gap-[72px] h-[297.55px] min-h-[auto] min-w-0 overflow-visible w-[739.5px] z-auto text-start flex text-[16px] font-normal leading-[24px] rounded-[40px] border-[0.8px] border-solid border-[rgb(84,100,120)]" >
@@ -98,13 +98,13 @@ const SwiggyJourney = () => {
                         </svg>
                     </span>
 
-                    <span className="box-border text-white self-center text-[22px] font-medium tracking-[-0.55px] leading-[29px] transition-[color] duration-[0.3s] block text-left">
+                    <span className=" text-white self-center text-[22px] font-medium tracking-[-0.55px] leading-[29px] transition-[color] duration-[0.3s] block text-left">
                         Launch of our Food Delivery business
                     </span>
                     <img loading="lazy" decoding="async" width={594} height={739} src="https://www.swiggy.com/corporate/wp-content/uploads/2024/10/Food-2.webp" alt="" srcSet="
     https://www.swiggy.com/corporate/wp-content/uploads/2024/10/Food-2.webp         594w,
     https://www.swiggy.com/corporate/wp-content/uploads/2024/10/Food-2-241x300.webp 241w
-  " sizes="auto, (max-width: 594px) 100vw, 594px" className="box-border h-[167.95px] max-w-full text-[rgb(51,51,51)] break-inside-auto inline-block align-middle w-[135px] text-center text-[16px] font-normal leading-[24px] rounded-none" />
+  " sizes="auto, (max-width: 594px) 100vw, 594px" className=" h-[167.95px] max-w-full text-[rgb(51,51,51)] break-inside-auto inline-block align-middle w-[135px] text-center text-[16px] font-normal leading-[24px] rounded-none" />
 
                 </div><div className=" text-[rgb(51,51,51)] relative self-auto flex-[1_0_auto] order-none items-center gap-[72px] h-[297.55px] min-h-[auto] min-w-0 overflow-visible w-[739.5px] z-auto text-start flex text-[16px] font-normal leading-[24px] rounded-[40px] border-[0.8px] border-solid border-[rgb(84,100,120)]" >
                     <span>
@@ -122,13 +122,13 @@ const SwiggyJourney = () => {
                         </svg>
                     </span>
 
-                    <span className="box-border text-white self-center text-[22px] font-medium tracking-[-0.55px] leading-[29px] transition-[color] duration-[0.3s] block text-left">
+                    <span className=" text-white self-center text-[22px] font-medium tracking-[-0.55px] leading-[29px] transition-[color] duration-[0.3s] block text-left">
                         Launch of our Food Delivery business
                     </span>
                     <img loading="lazy" decoding="async" width={594} height={739} src="https://www.swiggy.com/corporate/wp-content/uploads/2024/10/Food-2.webp" alt="" srcSet="
     https://www.swiggy.com/corporate/wp-content/uploads/2024/10/Food-2.webp         594w,
     https://www.swiggy.com/corporate/wp-content/uploads/2024/10/Food-2-241x300.webp 241w
-  " sizes="auto, (max-width: 594px) 100vw, 594px" className="box-border h-[167.95px] max-w-full text-[rgb(51,51,51)] break-inside-auto inline-block align-middle w-[135px] text-center text-[16px] font-normal leading-[24px] rounded-none" />
+  " sizes="auto, (max-width: 594px) 100vw, 594px" className=" h-[167.95px] max-w-full text-[rgb(51,51,51)] break-inside-auto inline-block align-middle w-[135px] text-center text-[16px] font-normal leading-[24px] rounded-none" />
 
                 </div>
             </div>

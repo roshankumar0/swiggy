@@ -2,7 +2,7 @@ import React from 'react'
 
 const Blog = () => {
     return (
-        <div className='bg-white'>
+        <div className='bg-white z-[-99]'>
             <div className='max-w-[1180px] m-auto py-[80px]'>
                 <div className='flex flex-col justify-center items-center '>
                     <span className=" text-[rgba(2,6,12,0.75)] text-[40px] leading-[49.92px] font-black tracking-[0.03px] uppercase mx-[10px] mb-10 my-0">

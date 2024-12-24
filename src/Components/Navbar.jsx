@@ -46,7 +46,7 @@ const Navbar = () => {
         },
         { name: "Help" },
         {
-            name: "Roshan Kumar", type: "user",
+            name: " Kumar", type: "user",
             icon: <IoBagOutline />
         },
         {
@@ -67,7 +67,7 @@ const Navbar = () => {
         </li >
     }
     return (
-        <header className='flex justify-between h-20 max-w-[1200px] min-w-[1200px] z-10  m-auto'
+        <header className='flex justify-between h-20 max-w-[1200px] min-w-[1200px] z-[9999]  m-auto'
         style={{ boxShadow: '0 15px 40px -20px rgba(40, 44, 63, .15)' }}>
             <ul className='flex'>{accountList.slice(0, 1).map((item, index) => renderAccountHelper(item, index))}</ul>
             <ul className='flex text-[#3d4152] font-medium text-[16px]'>{accountList.slice(1).map((item, index) => renderAccountHelper(item, index))}</ul>

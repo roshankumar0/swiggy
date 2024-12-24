@@ -7,7 +7,7 @@ const Team = () => {
                 <div className='flex flex-col gap-[48px]'>
                     <div className='flex gap-6'>
                         <button className=" text-[rgba(2,6,12,0.45)] text-[16px] leading-[21px] overflow-visible w-[241.087px] flex font-semibold text-center whitespace-normal select-none cursor-pointer items-center flex-[0_1_content] flex-row gap-[5px] h-[62.6px] justify-center relative tracking-[-0.3px] px-[32px] py-[20px] rounded-[48px] border-[0.8px] border-solid border-[rgba(2,6,12,0.15)]" >
-                            <span className="box-border text-[rgba(2,6,12,0.45)] items-center flex text-[20px] text-center leading-[21px] font-semibold whitespace-normal decoration-[rgba(2,6,12,0.45)] decoration-solid decoration-auto cursor-pointer tracking-[-0.3px]">
+                            <span className=" text-[rgba(2,6,12,0.45)] items-center flex text-[20px] text-center leading-[21px] font-semibold whitespace-normal decoration-[rgba(2,6,12,0.45)] decoration-solid decoration-auto cursor-pointer tracking-[-0.3px]">
                                 Management Team
                             </span>
                         </button>
@@ -25,15 +25,15 @@ const Team = () => {
     https://www.swiggy.com/corporate/wp-content/uploads/2024/10/management-member-7.webp         328w,
     https://www.swiggy.com/corporate/wp-content/uploads/2024/10/management-member-7-300x298.webp 300w,
     https://www.swiggy.com/corporate/wp-content/uploads/2024/10/management-member-7-150x150.webp 150w
-  " sizes="auto, (max-width: 328px) 100vw, 328px" className="box-border h-[326px] max-w-full text-[rgb(51,51,51)] break-inside-auto transition-[0.2s] inline-block align-middle object-fill text-center text-[16px] font-normal leading-[24px] rounded-[45px]" />
+  " sizes="auto, (max-width: 328px) 100vw, 328px" className=" h-[326px] max-w-full text-[rgb(51,51,51)] break-inside-auto transition-[0.2s] inline-block align-middle object-fill text-center text-[16px] font-normal leading-[24px] rounded-[45px]" />
                             </div>
 
                             <div className='flex items-center'>
                                 <div className='pt-6 flex-1'>
-                                    <div className="box-border text-[rgba(2,6,12,0.75)] h-[29px] text-[22px] font-bold tracking-[-0.55px] leading-[29px] text-start">
+                                    <div className=" text-[rgba(2,6,12,0.75)] h-[29px] text-[22px] font-bold tracking-[-0.55px] leading-[29px] text-start">
                                         Sumer Juneja
                                     </div>
-                                    <p className="box-border text-[rgba(2,6,12,0.45)] text-[18px] font-medium tracking-[-0.45px] leading-[23px] text-start">
+                                    <p className=" text-[rgba(2,6,12,0.45)] text-[18px] font-medium tracking-[-0.45px] leading-[23px] text-start">
                                         Non-Executive Director
                                     </p>
                                 </div>
@@ -60,15 +60,15 @@ const Team = () => {
     https://www.swiggy.com/corporate/wp-content/uploads/2024/10/management-member-7.webp         328w,
     https://www.swiggy.com/corporate/wp-content/uploads/2024/10/management-member-7-300x298.webp 300w,
     https://www.swiggy.com/corporate/wp-content/uploads/2024/10/management-member-7-150x150.webp 150w
-  " sizes="auto, (max-width: 328px) 100vw, 328px" className="box-border h-[326px] max-w-full text-[rgb(51,51,51)] break-inside-auto transition-[0.2s] inline-block align-middle object-fill text-center text-[16px] font-normal leading-[24px] rounded-[45px]" />
+  " sizes="auto, (max-width: 328px) 100vw, 328px" className=" h-[326px] max-w-full text-[rgb(51,51,51)] break-inside-auto transition-[0.2s] inline-block align-middle object-fill text-center text-[16px] font-normal leading-[24px] rounded-[45px]" />
                             </div>
 
                             <div className='flex items-center'>
                                 <div className='pt-6 flex-1'>
-                                    <div className="box-border text-[rgba(2,6,12,0.75)] h-[29px] text-[22px] font-bold tracking-[-0.55px] leading-[29px] text-start">
+                                    <div className=" text-[rgba(2,6,12,0.75)] h-[29px] text-[22px] font-bold tracking-[-0.55px] leading-[29px] text-start">
                                         Sumer Juneja
                                     </div>
-                                    <p className="box-border text-[rgba(2,6,12,0.45)] text-[18px] font-medium tracking-[-0.45px] leading-[23px] text-start">
+                                    <p className=" text-[rgba(2,6,12,0.45)] text-[18px] font-medium tracking-[-0.45px] leading-[23px] text-start">
                                         Non-Executive Director
                                     </p>
                                 </div>
@@ -95,15 +95,15 @@ const Team = () => {
     https://www.swiggy.com/corporate/wp-content/uploads/2024/10/management-member-7.webp         328w,
     https://www.swiggy.com/corporate/wp-content/uploads/2024/10/management-member-7-300x298.webp 300w,
     https://www.swiggy.com/corporate/wp-content/uploads/2024/10/management-member-7-150x150.webp 150w
-  " sizes="auto, (max-width: 328px) 100vw, 328px" className="box-border h-[326px] max-w-full text-[rgb(51,51,51)] break-inside-auto transition-[0.2s] inline-block align-middle object-fill text-center text-[16px] font-normal leading-[24px] rounded-[45px]" />
+  " sizes="auto, (max-width: 328px) 100vw, 328px" className=" h-[326px] max-w-full text-[rgb(51,51,51)] break-inside-auto transition-[0.2s] inline-block align-middle object-fill text-center text-[16px] font-normal leading-[24px] rounded-[45px]" />
                             </div>
 
                             <div className='flex items-center'>
                                 <div className='pt-6 flex-1'>
-                                    <div className="box-border text-[rgba(2,6,12,0.75)] h-[29px] text-[22px] font-bold tracking-[-0.55px] leading-[29px] text-start">
+                                    <div className=" text-[rgba(2,6,12,0.75)] h-[29px] text-[22px] font-bold tracking-[-0.55px] leading-[29px] text-start">
                                         Sumer Juneja
                                     </div>
-                                    <p className="box-border text-[rgba(2,6,12,0.45)] text-[18px] font-medium tracking-[-0.45px] leading-[23px] text-start">
+                                    <p className=" text-[rgba(2,6,12,0.45)] text-[18px] font-medium tracking-[-0.45px] leading-[23px] text-start">
                                         Non-Executive Director
                                     </p>
                                 </div>
