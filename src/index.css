@@ -48,3 +48,15 @@
     filter: blur(200px);
     opacity: 0.10;
 }
+.deliverying-overlay::after{
+    position: absolute;
+    content: "";
+    width: 369px;
+    height: 231px;
+    background-color: #FF5200;
+    opacity: 10%;
+    transform: rotate(-11.96deg);
+    left: calc(50% - 180px);
+    filter: blur(100px);
+    z-index: -999;
+}

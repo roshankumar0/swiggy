@@ -16,6 +16,7 @@ import Login from './Login';
 import SearchPage from './pages/Search';
 import Corporate from './pages/corporat'
 import Bussiness from './pages/Bussiness';
+import Delivering from './pages/Delivering'
 function App() {
   const [data, setData] = useState([]);
   const [slide, setSlide] = useState(0);
@@ -105,6 +106,7 @@ function App() {
       <Route path='/search' element={<SearchPage />} />
       <Route path='/corporate' element={<Corporate />} />
       <Route path='/bussiness' element={<Bussiness />} />
+      <Route path='/delivering' element={<Delivering />} />
     </Routes>
   );
 }
