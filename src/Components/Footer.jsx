@@ -1,4 +1,4 @@
-import React from 'react';
+
 import footerData from '../data.json';
 
 // Function to render the items based on their structure
@@ -8,13 +8,13 @@ const renderItems = (items) => {
     if (item?.items2) {
       return (
         <div key={i}>
-          <ul>
+          <div>
             {item.items2.map((subItem, j) => (
-              <li key={j} className='font-extralight text-[16px] font-Gilroy leading-[20px] cursor-pointer py-4 text-[#02060ceb]'>
+              <p key={j} className='font-extralight text-[16px] font-Gilroy leading-[20px] cursor-pointer py-4 text-[#02060ceb]'>
                 {subItem}
-              </li>
+              </p>
             ))}
-          </ul>
+          </div>
         </div>
       );
     }
@@ -23,22 +23,22 @@ const renderItems = (items) => {
       return (
         <div key={i}>
           <h5 className='font-Gilroy text-[16px] leading-[19px] text-[#02060ceb]'>Legal:</h5>
-          <ul>
+          <div>
             {item.items3.map((subItem, j) => (
-              <li key={j} className='font-extralight text-[16px] font-Gilroy leading-[20px] cursor-pointer py-4 text-[#02060ceb]'>
+              <p key={j} className='font-extralight text-[16px] font-Gilroy leading-[20px] cursor-pointer py-4 text-[#02060ceb]'>
                 {subItem}
-              </li>
+              </p>
             ))}
-          </ul>
+          </div>
         </div>
       );
     }
 
     // Default item rendering
     return (
-      <li key={i} className='font-extralight text-[16px] font-Gilroy cursor-pointer leading-[20px] my-4 text-[#02060c99]'>
+      <div key={i} className='font-extralight text-[16px] font-Gilroy cursor-pointer leading-[20px] my-4 text-[#02060c99]'>
         {item}
-      </li>
+      </div>
     );
   });
 };
@@ -62,7 +62,7 @@ const Footer = () => {
             <h4 className='flex font-gilroy-bold text-[18px] leading-[19px] tracking-[0.3px] text-[#02060ceb] font-bold'>
               {data?.title}
             </h4>
-            <ul>
+            <div>
               {/* Render items (items, items2, or items3) for each section */}
               {renderItems(data?.items)}
               {data?.title2 && data?.items2 && (
@@ -77,17 +77,7 @@ const Footer = () => {
                   </ul>
                 </>
               )}
-
-              {/* Handle additional title3 and items3 (if they exist) */}
-                {/* {data?.title3 && data?.items3 && (
-                    <>
-                    <h5 className='font-Gilroy text-[16px] leading-[19px] text-[#02060ceb]'>
-                        {data.title3}
-                    </h5>
-                    {renderItems(data?.items3)}
-                    </>
-                )} */}
-            </ul>
+            </div>
           </section>
         ))}
       </footer>
