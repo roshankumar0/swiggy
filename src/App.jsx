@@ -1,5 +1,5 @@
 import { useEffect, useState, useMemo } from 'react';
-import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import BestFoodOptions from './Components/BestFoodOptions';
 import Header from './Components/Header';
@@ -15,12 +15,11 @@ import MyAccount from './MyAccount';
 import Login from './Login';
 import SearchPage from './pages/Search';
 import Corporate from './pages/corporat'
-import Bussiness from './pages/Bussiness';
+import Bussiness from './pages/bussiness';
 import Delivering from './pages/Delivering'
 function App() {
   const [data, setData] = useState([]);
   const [slide, setSlide] = useState(0);
-  const navigate = useNavigate()
   // Load data from API once and set it
   useEffect(() => {
     setData(apiData);
