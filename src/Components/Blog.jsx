@@ -31,11 +31,9 @@ const Blog = () => {
                                     </a>
                                 </div>
                                 <div>
-                                    < div className="bg-[#FFEEE5] text-[14px] leading-[17px] transition-[0.3s] font-bold tracking-[-0.1px] px-[16px] py-[13.5px] rounded-[12px]" >
-                                        <span className="text-[rgb(255,82,0)] block text-[14px] leading-[17px] font-bold tracking-[-0.1px]">
-                                            Read more
-                                        </span>
-                                    </div >
+                                    <button className=" mt-[28px] bg-[#ff5200] font-Gilroy text-[18px] text-white block rounded-[12px] px-4 py-[13px] leading-[24px] text-center font-medium tracking-[-0.3px]">
+                                        Know more
+                                    </button>
                                 </div>
                             </div>
                         </div>

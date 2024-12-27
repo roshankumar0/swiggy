@@ -38,10 +38,13 @@ const CorporateNavbar = () => {
         if (item.includes("Delivering For Everyone")) {
             navigate("/delivering")
         }
+        if (item.includes("Newsroom")) {
+            navigate("/newsroom")
+        }
     }
     console.log(window.scrollY)
     return (
-        <header className={`p-8 sticky top-0 right-0 z-50 left-0 ${isScrolled ? "shadow bg-[#FCFAFE]" : ""}`}>
+        <header className={`p-8 sticky top-0 right-0 z-50 left-0 ${isScrolled ? "shadow bg-white" : "bg-[#EBEBF3]"}`}>
             <nav>
                 <div className='flex items-center justify-between'>
                     <img className='max-w-[150px] w-full' src={navbar[0].image} alt="" />

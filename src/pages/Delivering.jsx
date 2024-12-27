@@ -1,6 +1,7 @@
 import React from 'react'
 import CorporateNavbar from '../Components/CorporateNavbar'
 import Footer from '../Components/Footer'
+import Membership from '../Components/Membership'
 
 const Delivering = () => {
   return (
@@ -58,6 +59,8 @@ const Delivering = () => {
           </div>
         </div>
       </div>
+      <Membership/>
+      <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/seo/App_download_banner.png" alt="" />
       <Footer />
     </div>
   )
