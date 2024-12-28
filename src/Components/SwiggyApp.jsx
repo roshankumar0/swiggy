@@ -2,24 +2,25 @@ import React from 'react'
 
 const SwiggyApp = () => {
   return (
-    <div className="max-w-[1180px] m-auto ">
-      <div className='pt-[180px]'>
-        <div className='flex flex-col gap-[50px]'>
-          <div className='flex'>
-            <div className='flex gap-6'>
-              <button className=" shadow-[rgba(0,0,0,0)_0px_0px_0px_0px] overflow-visible w-[186.525px]    select-none flex-[0_1_content] flex-row gap-[5px] h-[62.6px] justify-center relative px-[32px] py-[20px] rounded-[48px] border-[0.8px] border-solid border-[rgb(255,82,0)]  bg-[#ff5200] text-white " >
-                Press Release
-              </button>
-              <button className="text-[rgba(2,6,12,0.45)] items-center flex text-[20px]  leading-[21px] font-semibold  decoration-[rgba(2,6,12,0.45)] decoration-solid decoration-auto cursor-pointer shadow-[rgba(0,0,0,0)_0px_0px_0px_0px] overflow-visible w-[186.525px]    select-none flex-[0_1_content] flex-row gap-[5px] h-[62.6px] justify-center relative px-[32px] py-[20px] rounded-[48px] border-[0.8px] border-solid border-[rgba(2,6,12,0.15)]  " >
-                Media Kit
-              </button>
+    <div className='bg-[#02060CEB] '>
+      <div className='w-[1180px] m-auto '>
+        <div className='flex gap-x-[196px] items-center pt-[34px]'>
+          <div>
+            <img  loading="lazy" decoding="async" width={424} height={128} src="https://www.swiggy.com/corporate/wp-content/uploads/2024/10/Group.png" alt="" srcSet="
+    https://www.swiggy.com/corporate/wp-content/uploads/2024/10/Group.png        424w,
+    https://www.swiggy.com/corporate/wp-content/uploads/2024/10/Group-300x91.png 300w
+  " sizes="auto, (max-width: 424px) 100vw, 424px" className=" h-[31.6875px] max-w-[105px] text-[rgb(51,51,51)] break-inside-auto inline-block align-middle object-cover object-[50%_50%] w-[105px] text-left text-[16px] font-normal leading-[24px] rounded-none mb-8" />
+            <h2 className=" pb-4 text-white font-extrabold leading-[54px] text-[40px] break-after-auto tracking-[-1px] text-start m-0">
+              Get the Swiggy App now!
+            </h2>
+            <div className=" text-[rgba(255,255,255,0.45)] h-[30px] text-[18px] font-normal leading-[30px] tracking-[normal] text-start">
+              For best offers and discounts curated specially for you.
+            </div>
 
-            </div>
-            <div>
-              <input placeholder="Search" type="search" className="box-border text-[rgb(122,122,122)] text-[20px] leading-[21px] transition-[padding-inline] w-[580px] overflow-clip -outline-offset-2 h-[65.6px] min-h-[64px] font-semibold tracking-[-0.3px] text-start px-[30px] py-[20px] rounded-[16px] border-[0.8px] border-solid border-[rgb(205,205,205)]" />
-            </div>
           </div>
-          <div>bottom</div>
+          <div>
+            <img loading="lazy" decoding="async" width={1} height={1} src="https://www.swiggy.com/corporate/wp-content/uploads/2024/10/app-now-pic-2.webp" alt="" className=" h-[263.65px] max-w-full text-[rgb(51,51,51)] break-inside-auto inline-block align-middle w-[492px] text-center text-[16px] font-normal leading-[24px] rounded-none" />
+          </div>
         </div>
       </div>
     </div>
