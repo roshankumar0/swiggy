@@ -18,6 +18,7 @@ import Corporate from './pages/corporat'
 import Bussiness from './pages/bussiness'; 
 import Delivering from './pages/Delivering'
 import Newsroom from './Components/Newsroom';
+import Investors from './Components/Investors';
 function App() {
   const [data, setData] = useState([]);
   const [slide, setSlide] = useState(0);
@@ -108,6 +109,7 @@ function App() {
       <Route path='/bussiness' element={<Bussiness />} />
       <Route path='/delivering' element={<Delivering />} />
       <Route path='/newsroom' element={<Newsroom />} />
+      <Route path='/investor' element={<Investors/>}/>
     </Routes>
   );
 }
