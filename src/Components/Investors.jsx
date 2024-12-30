@@ -94,7 +94,6 @@ const Investors = () => {
                                     <div className='flex space-x-9'>
                                         <input aria-invalid="false" placeholder="Enter Your mail" name="your-email" className=" text-white text-[14px] leading-[30px] transition-[0.3s] w-[341.5px] overflow-clip  font-normal px-[20.36px] py-[7px] rounded-[12px] border-[0.8px] border-solid bg-transparent " />
                                         <input type="submit" className=" bg-[#F0F0F5] shadow-[rgba(0,0,0,0)_0px_0px_0px_0px] text-[rgba(2,6,12,0.92)] bg-[F0F0F5] text-[13px] leading-[16px] overflow-clip w-[97.1625px] block font-bold text-center whitespace-nowrap transition-[0.3s] select-none cursor-pointer tracking-[-0.1px] capitalize px-[18.5px] py-[14px] rounded-[12px] border-[0.8px] border-solid border-[rgb(240,240,245)]" />
-
                                     </div>
                                 </div>
                             </div>

@@ -44,6 +44,9 @@ const CorporateNavbar = () => {
         if (item.includes("Investor Relations")) {
             navigate("/investor")
         }
+        if(item.includes("Contact Us")){
+            navigate("/contactus")
+        }
     }
     console.log(window.scrollY)
     return (
