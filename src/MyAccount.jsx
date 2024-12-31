@@ -19,7 +19,7 @@ const MyAccount = () => {
                kumar
             </div>
             <div>
-              <span>9650730925</span>
+              <span>9876543210</span>
               <span className='ml-[15px]'>kumar40786@gmail.com</span>
             </div>
           </div>

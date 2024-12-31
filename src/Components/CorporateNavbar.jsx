@@ -47,6 +47,9 @@ const CorporateNavbar = () => {
         if(item.includes("Contact Us")){
             navigate("/contactus")
         }
+        if(item.includes("Sustainability")){
+            navigate("/sustainability")
+        }
     }
     console.log(window.scrollY)
     return (
