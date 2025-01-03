@@ -364,7 +364,8 @@
                 "distance": "5.5 km",
                 "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/DINEOUT_ALL_RESTAURANTS/IMAGES/RESTAURANT_IMAGE_SERVICE/2024/4/19/c644ea0f-a7f3-4490-98c7-62e078d0fae0_20240419T103038506.jpg",
                 "offer": "Flat 30% off on pre-booking",
-                "bankOffer": "Up to 20% off with bank offers"
+                "bankOffer": "Up to 20% off with bank offers",
+                "extra":"Get extra 5% off using TRYNEW"
             },
             {
                 "id": 2,

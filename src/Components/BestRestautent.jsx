@@ -7,7 +7,7 @@ const BestRestautent = () => {
     return (
         <main className='bg-white mt-[120px]'>
             <header className='flex justify-between pb-8'>
-                <h2 className='text-[24px] font-bold font-Gilroy text-[#02060ceb] tracking-[0.6px] leading-6'>Discover best restaurants on Dineout</h2>
+                <h2 className='text-[24px] font-bold font-Gilroy text-[#02060ceb] tracking-[-0.6px] leading-6'>Discover best restaurants on Dineout</h2>
                 <div className='flex gap-3'>
                     <div >
                         <div className='rounded-full h-[34px] w-[34px]  bg-[#02060c26] pt-2 pr-2 pb-1 pl-2 '>
@@ -24,7 +24,7 @@ const BestRestautent = () => {
             <section className="flex overflow-x-scroll gap-4">
                 {
                     bestResto?.restaurantData?.map((data) => {
-                        return <article key={data.id} className="min-w-[328px] border rounded-[16px] rounded-[16px bg-red-800] overflow-hidden cursor-pointer">
+                        return <article key={data.id} className="min-w-[328px] text-[13px] border rounded-[16px] font-Gilroy rounded-[16px bg-red-800] overflow-hidden cursor-pointer">
                             <figure>
                                 <div className="relative flex items-end">
                                     <img
@@ -84,12 +84,15 @@ const BestRestautent = () => {
                                         <img className='h-5 w-[26px] object-contain' src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/dineout/rx-card/OFFER.png" alt="" />
                                         <p>{data.offer}</p>
                                     </div>
-                                    <div>+3</div>
+                                    <div className='text-[13px]'>+3</div>
                                 </section>
 
-                                <section className="bg-[#c8f9e5] font-ProximaNovaCond rounded-[8px] text-[#1ba672] px-2 h-9 mt-3 pl-2 flex items-center">
+                                <section className="bg-[#c8f9e5] text-[16px] font-ProximaNovaCond rounded-[8px] text-[#1ba672] px-2 h-9 mt-3 pl-2 flex items-center">
                                     <p>{data.bankOffer}</p>
                                 </section>
+                                <div className="pt-3 bg-white font-normal text-[13px] leading-[17px] tracking-[-0.43px] text-[rgb(81,52,182)]">
+                                    {data.extra}
+                                </div>
                             </section>
                         </article>
                     })

@@ -5,84 +5,104 @@ import SwiggyApp from './SwiggyApp'
 
 const Newsroom = () => {
     return (
-        <div className=''>
+        <div >
             <CorporateNavbar />
             <div className='bg-[#EBEBF3]'>
-                <div>
-                    <h2 className="text-[rgb(2,6,12)] font-black leading-[49.92px] text-[40px] break-after-auto tracking-[0.03px] uppercase text-center m-0">
+                <div className=''>
+                    <div className='pt-[33px]'>
+                    <h2 className="  text-[rgb(2,6,12)] font-black leading-[49.92px] text-[40px] break-after-auto tracking-[0.03px] uppercase text-center m-0">
                         Newsroom
                     </h2>
-                    <p className="text-[rgba(2,6,12,0.45)] text-[18px] font-medium tracking-[-0.03px] leading-[24px] text-center">
+                    </div>
+                    <p className="text-[rgba(2,6,12,0.45)] mb-[14px] text-[18px] font-medium tracking-[-0.03px] leading-[24px] text-center">
                         Announcements and updates at Swiggy
                     </p>
-                </div>
-                <div>
                     <div>
-                        <div className='pt-[111px] pb-[150px] px-4 '>
-                            <div className="flex overflow-x-auto space-x-4  justify-center py-4">
-                                <div className="w-[621px] flex-shrink-0 flex border-white border-2 rounded-[20px] overflow-hidden opacity-[0.2] snap-start">
-                                    <div className="py-[35px] px-10">
-                                        <div className="box-border text-[rgba(2,6,12,0.92)] text-[20px] leading-[24px] font-bold tracking-[-0.3px] mb-[17px]">
-                                            How India Swiggy’d Its Way Through 2024: A Deep Dive into the Nation’s Eatopia
+                        <div>
+                            <div className='pt-[111px] pb-[150px] px-4 '>
+                                <div className="flex overflow-x-auto space-x-4  justify-center py-4">
+                                    <div className="w-[621px] flex-shrink-0 flex border-white border-2 rounded-[20px] overflow-hidden opacity-[0.2] snap-start">
+                                        <div className="py-[35px] px-10">
+                                            <div className="box-border text-[rgba(2,6,12,0.92)] text-[20px] leading-[24px] font-bold tracking-[-0.3px] mb-[17px]">
+                                                How India Swiggy’d Its Way Through 2024: A Deep Dive into the Nation’s Eatopia
+                                            </div>
+
+                                            <p className="box-border text-[rgb(2,6,12)] text-[16px] font-medium tracking-[-0.3px] leading-[20px]">
+                                                If there’s one thing that truly united India this year, it wasn’t cricket, or viral dance trends—it was the collective midnight panic of deciding between pizza and biryani to satisfy the hunger pangs.
+                                            </p>
+
+                                            <button className="mt-[28px] bg-[#ff5200] font-Gilroy text-[18px] text-white block rounded-[12px] px-4 py-[13px] leading-[24px] text-center font-medium tracking-[-0.3px]">
+                                                Know more
+                                            </button>
                                         </div>
-
-                                        <p className="box-border text-[rgb(2,6,12)] text-[16px] font-medium tracking-[-0.3px] leading-[20px]">
-                                            If there’s one thing that truly united India this year, it wasn’t cricket, or viral dance trends—it was the collective midnight panic of deciding between pizza and biryani to satisfy the hunger pangs.
-                                        </p>
-
-                                        <button className="mt-[28px] bg-[#ff5200] font-Gilroy text-[18px] text-white block rounded-[12px] px-4 py-[13px] leading-[24px] text-center font-medium tracking-[-0.3px]">
-                                            Know more
-                                        </button>
+                                        <div className="">
+                                            <img className="w-full h-full object-cover" src="https://www.swiggy.com/corporate/wp-content/uploads/2024/09/News-Detail.png" alt="" />
+                                        </div>
                                     </div>
-                                    <div className="">
-                                        <img className="w-full h-full object-cover" src="https://www.swiggy.com/corporate/wp-content/uploads/2024/09/News-Detail.png" alt="" />
-                                    </div>
-                                </div>
-                                <div>
                                     <div>
-                                        <div className='mb-[20px]'>
-                                            <div className='flex  items-center justify-between '>
-                                                <div
-                                                    className=" bg-[#02060C26] rounded-[50%] p-2 cursor-pointer "
-                                                >
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width={16}
-                                                        height={16}
-                                                        viewBox="0 0 16 16"
-                                                        fill="none"
+                                        <div>
+                                            <div className='mb-[20px]'>
+                                                <div className='flex  items-center justify-between '>
+                                                    <div
+                                                        className=" bg-[#02060C26] rounded-[50%] p-2 cursor-pointer "
                                                     >
-                                                        <path
-                                                            d="M6.47883 2.43888C6.80185 2.13743 7.30808 2.15492 7.60953 2.47794C7.91097 2.80096 7.89349 3.30719 7.57047 3.60864L4.09404 6.85289C3.95525 6.98242 3.83266 7.09704 3.72428 7.19997L14.1038 7.19997C14.5456 7.19997 14.9038 7.55814 14.9038 7.99997C14.9038 8.4418 14.5456 8.79997 14.1038 8.79997L3.67664 8.79997C3.79639 8.91434 3.9345 9.04352 4.09403 9.1924L7.52805 12.3971C7.85106 12.6986 7.86855 13.2048 7.5671 13.5278C7.26565 13.8509 6.75942 13.8683 6.4364 13.5669L2.96478 10.3271C2.55662 9.94622 2.19194 9.60594 1.93661 9.29209C1.65887 8.95068 1.42686 8.5425 1.42686 8.02263C1.42686 7.50277 1.65888 7.09459 1.93662 6.75318C2.19195 6.43933 2.55663 6.09907 2.96479 5.71824L6.47883 2.43888Z"
-                                                            fill="#02060C"
-                                                            fillOpacity="0.92"
-                                                        />
-                                                    </svg>
-                                                </div>
-                                                <div
-                                                    className=" bg-[#02060C26] rounded-[50%] p-2 rotate-180 cursor-pointer"
-                                                >
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width={16}
-                                                        height={16}
-                                                        viewBox="0 0 16 16"
-                                                        fill="none"
-                                                        
+                                                        <svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            width={16}
+                                                            height={16}
+                                                            viewBox="0 0 16 16"
+                                                            fill="none"
+                                                        >
+                                                            <path
+                                                                d="M6.47883 2.43888C6.80185 2.13743 7.30808 2.15492 7.60953 2.47794C7.91097 2.80096 7.89349 3.30719 7.57047 3.60864L4.09404 6.85289C3.95525 6.98242 3.83266 7.09704 3.72428 7.19997L14.1038 7.19997C14.5456 7.19997 14.9038 7.55814 14.9038 7.99997C14.9038 8.4418 14.5456 8.79997 14.1038 8.79997L3.67664 8.79997C3.79639 8.91434 3.9345 9.04352 4.09403 9.1924L7.52805 12.3971C7.85106 12.6986 7.86855 13.2048 7.5671 13.5278C7.26565 13.8509 6.75942 13.8683 6.4364 13.5669L2.96478 10.3271C2.55662 9.94622 2.19194 9.60594 1.93661 9.29209C1.65887 8.95068 1.42686 8.5425 1.42686 8.02263C1.42686 7.50277 1.65888 7.09459 1.93662 6.75318C2.19195 6.43933 2.55663 6.09907 2.96479 5.71824L6.47883 2.43888Z"
+                                                                fill="#02060C"
+                                                                fillOpacity="0.92"
+                                                            />
+                                                        </svg>
+                                                    </div>
+                                                    <div
+                                                        className=" bg-[#02060C26] rounded-[50%] p-2 rotate-180 cursor-pointer"
                                                     >
-                                                        <path
-                                                            d="M6.47883 2.43888C6.80185 2.13743 7.30808 2.15492 7.60953 2.47794C7.91097 2.80096 7.89349 3.30719 7.57047 3.60864L4.09404 6.85289C3.95525 6.98242 3.83266 7.09704 3.72428 7.19997L14.1038 7.19997C14.5456 7.19997 14.9038 7.55814 14.9038 7.99997C14.9038 8.4418 14.5456 8.79997 14.1038 8.79997L3.67664 8.79997C3.79639 8.91434 3.9345 9.04352 4.09403 9.1924L7.52805 12.3971C7.85106 12.6986 7.86855 13.2048 7.5671 13.5278C7.26565 13.8509 6.75942 13.8683 6.4364 13.5669L2.96478 10.3271C2.55662 9.94622 2.19194 9.60594 1.93661 9.29209C1.65887 8.95068 1.42686 8.5425 1.42686 8.02263C1.42686 7.50277 1.65888 7.09459 1.93662 6.75318C2.19195 6.43933 2.55663 6.09907 2.96479 5.71824L6.47883 2.43888Z"
-                                                            fill="#02060C"
-                                                            fillOpacity="0.92"
-                                                        />
-                                                    </svg>
+                                                        <svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            width={16}
+                                                            height={16}
+                                                            viewBox="0 0 16 16"
+                                                            fill="none"
+
+                                                        >
+                                                            <path
+                                                                d="M6.47883 2.43888C6.80185 2.13743 7.30808 2.15492 7.60953 2.47794C7.91097 2.80096 7.89349 3.30719 7.57047 3.60864L4.09404 6.85289C3.95525 6.98242 3.83266 7.09704 3.72428 7.19997L14.1038 7.19997C14.5456 7.19997 14.9038 7.55814 14.9038 7.99997C14.9038 8.4418 14.5456 8.79997 14.1038 8.79997L3.67664 8.79997C3.79639 8.91434 3.9345 9.04352 4.09403 9.1924L7.52805 12.3971C7.85106 12.6986 7.86855 13.2048 7.5671 13.5278C7.26565 13.8509 6.75942 13.8683 6.4364 13.5669L2.96478 10.3271C2.55662 9.94622 2.19194 9.60594 1.93661 9.29209C1.65887 8.95068 1.42686 8.5425 1.42686 8.02263C1.42686 7.50277 1.65888 7.09459 1.93662 6.75318C2.19195 6.43933 2.55663 6.09907 2.96479 5.71824L6.47883 2.43888Z"
+                                                                fill="#02060C"
+                                                                fillOpacity="0.92"
+                                                            />
+                                                        </svg>
+                                                    </div>
+
                                                 </div>
-                                             
+                                            </div>
+                                        </div>
+                                        <div className="w-[621px] flex-shrink-0 flex border-white border-2 rounded-[20px] overflow-hidden snap-start">
+
+                                            <div className="py-[35px] px-10">
+                                                <div className="box-border text-[rgba(2,6,12,0.92)] text-[20px] leading-[24px] font-bold tracking-[-0.3px] mb-[17px]">
+                                                    How India Swiggy’d Its Way Through 2024: A Deep Dive into the Nation’s Eatopia
+                                                </div>
+
+                                                <p className="box-border text-[rgb(2,6,12)] text-[16px] font-medium tracking-[-0.3px] leading-[20px]">
+                                                    If there’s one thing that truly united India this year, it wasn’t cricket, or viral dance trends—it was the collective midnight panic of deciding between pizza and biryani to satisfy the hunger pangs.
+                                                </p>
+
+                                                <button className="mt-[28px] bg-[#ff5200] font-Gilroy text-[18px] text-white block rounded-[12px] px-4 py-[13px] leading-[24px] text-center font-medium tracking-[-0.3px]">
+                                                    Know more
+                                                </button>
+                                            </div>
+                                            <div className="">
+                                                <img className="w-full h-full object-cover" src="https://www.swiggy.com/corporate/wp-content/uploads/2024/09/News-Detail.png" alt="" />
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="w-[621px] flex-shrink-0 flex border-white border-2 rounded-[20px] overflow-hidden snap-start">
-
+                                    <div className="w-[621px] flex-shrink-0 opacity-[0.2] flex border-white border-2 rounded-[20px] overflow-hidden snap-start">
                                         <div className="py-[35px] px-10">
                                             <div className="box-border text-[rgba(2,6,12,0.92)] text-[20px] leading-[24px] font-bold tracking-[-0.3px] mb-[17px]">
                                                 How India Swiggy’d Its Way Through 2024: A Deep Dive into the Nation’s Eatopia
@@ -101,29 +121,11 @@ const Newsroom = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="w-[621px] flex-shrink-0 opacity-[0.2] flex border-white border-2 rounded-[20px] overflow-hidden snap-start">
-                                    <div className="py-[35px] px-10">
-                                        <div className="box-border text-[rgba(2,6,12,0.92)] text-[20px] leading-[24px] font-bold tracking-[-0.3px] mb-[17px]">
-                                            How India Swiggy’d Its Way Through 2024: A Deep Dive into the Nation’s Eatopia
-                                        </div>
-
-                                        <p className="box-border text-[rgb(2,6,12)] text-[16px] font-medium tracking-[-0.3px] leading-[20px]">
-                                            If there’s one thing that truly united India this year, it wasn’t cricket, or viral dance trends—it was the collective midnight panic of deciding between pizza and biryani to satisfy the hunger pangs.
-                                        </p>
-
-                                        <button className="mt-[28px] bg-[#ff5200] font-Gilroy text-[18px] text-white block rounded-[12px] px-4 py-[13px] leading-[24px] text-center font-medium tracking-[-0.3px]">
-                                            Know more
-                                        </button>
-                                    </div>
-                                    <div className="">
-                                        <img className="w-full h-full object-cover" src="https://www.swiggy.com/corporate/wp-content/uploads/2024/09/News-Detail.png" alt="" />
-                                    </div>
+                                <div className='flex space-x-1 mt-8 justify-center'>
+                                    <span className='h-[8px] w-[8px] bg-[#babbc0] rounded-full '></span>
+                                    <span className='h-[8px] w-[8px] bg-[#babbc0] rounded-full '></span>
+                                    <span className='h-[8px] w-[8px] bg-[#babbc0]  rounded-full'></span>
                                 </div>
-                            </div>
-                            <div className='flex space-x-1 mt-8 justify-center'>
-                                <span className='h-[8px] w-[8px] bg-[#babbc0] rounded-full '></span>
-                                <span className='h-[8px] w-[8px] bg-[#babbc0] rounded-full '></span>
-                                <span className='h-[8px] w-[8px] bg-[#babbc0]  rounded-full'></span>
                             </div>
                         </div>
                     </div>

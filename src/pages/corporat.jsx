@@ -26,8 +26,9 @@ const corporat = () => {
     }}
     >
       <CorporateNavbar />
-      <div className='max-w-[80%] m-auto text-center pt-[72px] pb-[80px]'>
-        <h2 className=" text-[rgb(2,6,12)] font-black leading-[49.92px] text-[40px] break-after-auto tracking-[0.03px] text-center m-0">
+      <div className='max-w-[80%] relative m-auto text-center pt-[72px] pb-[80px]'>
+      <img width="433" height="171" src="https://www.swiggy.com/corporate/wp-content/uploads/2024/10/about-banner-left-arrow.webp" className='absolute left-[-151px] top-[40px] ' />
+        <h2 className=" text-[#02060c]  leading-[49.92px] font-Gilroy font-black text-[40px] tracking-[0.03px] text-center m-0">
           ABOUT US
         </h2>
         <p className='text-[22px] font-Gilroy font-medium leading-[32px] tracking-[-0.35px] text-[#02060C73] mt-4 mb-14'>Swiggy is a new-age consumer-first organization offering an easy-to-use convenience platform, accessible through a unified app.</p>
@@ -38,6 +39,7 @@ const corporat = () => {
             </div>
           ))}
         </div>
+        <img  width="351" height="243" src="https://www.swiggy.com/corporate/wp-content/uploads/2024/10/about-banner-right-arrow.webp" className='absolute top-[55px] right-[-153px] ' />
       </div>
       <About />
       <SwiggyJourney  />

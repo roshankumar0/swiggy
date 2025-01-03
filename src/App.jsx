@@ -21,6 +21,7 @@ import Newsroom from './Components/Newsroom';
 import Investors from './Components/Investors';
 import ContactUs from './Components/ContactUs';
 import Sustainability from './Components/Sustainability';
+import Orders from './Components/Orders';
 function App() {
   const [data, setData] = useState([]);
   const [slide, setSlide] = useState(0);
@@ -47,9 +48,6 @@ function App() {
     if (bestFoodOptions.length - 6 === slide) return false;
     setSlide(slide + 3);
   };
-  // useEffect(() => {
-  //   navigate("/")
-  // }, [])
   return (
     <Routes>
       <Route
@@ -63,23 +61,7 @@ function App() {
             </div>
             <div className="w-[80%] m-auto bg-white">
               <div className="mt-[120px]">
-                <div className="flex justify-between pb-8">
-                  <header>
-                    <h2 className="text-[24px] font-semibold font-Gilroy text-[#02060ceb] tracking-[0.6px] leading-6">
-                      Order our best food options
-                    </h2>
-                  </header>
-                  <div className="flex gap-3">
-                    <div onClick={handleLeft}>
-                      <div className="rounded-full h-[34px] w-[34px] bg-[#02060c26] pt-2 pr-2 pb-1 pl-2">
-                        <IoIosArrowRoundBack />
-                      </div>
-                    </div>
-                    <div onClick={handleRight} className="rounded-full h-[34px] w-[34px] bg-[#02060c26] pt-2 pr-2 pb-1 pl-2">
-                      <IoIosArrowRoundForward />
-                    </div>
-                  </div>
-                </div>
+               <Orders handleRight={handleRight} handleLeft={handleLeft} />
                 <div className="overflow-x-auto duration-300" style={{ transform: `translateX(-${slide * 100})%` }}>
                   {/* Top Row */}
                   <div className="flex">
@@ -87,8 +69,6 @@ function App() {
                       return <BestFoodOptions key={index} data={data} slide={slide} />;
                     })}
                   </div>
-
-                  {/* Bottom Row (Scrollable) */}
                   <div className="flex">
                     {bottomRow.map((data, index) => {
                       return <BestFoodOptions key={index} data={data} slide={slide} />;
