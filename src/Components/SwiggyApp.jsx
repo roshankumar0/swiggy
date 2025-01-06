@@ -3,8 +3,8 @@ import React from 'react'
 const SwiggyApp = () => {
   return (
     <div className='bg-[#02060CEB] '>
-      <div className='w-[1180px] m-auto '>
-        <div className='flex gap-x-[196px] items-center pt-[34px]'>
+      <div className=''>
+        <div className='flex gap-x-[196px] justify-center items-center pt-[34px]'>
           <div>
             <img  loading="lazy" decoding="async" width={424} height={128} src="https://www.swiggy.com/corporate/wp-content/uploads/2024/10/Group.png" alt="" srcSet="
     https://www.swiggy.com/corporate/wp-content/uploads/2024/10/Group.png        424w,

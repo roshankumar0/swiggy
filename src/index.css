@@ -60,3 +60,6 @@
     filter: blur(100px);
     z-index: -999;
 }
+/* ._custom-home > div:not(:nth-child(-n+3)):not(:nth-last-child(-n+2)) {
+    @apply w-[80%] mx-auto mt-[120px];
+} */

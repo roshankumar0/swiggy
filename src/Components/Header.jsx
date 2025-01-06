@@ -52,7 +52,7 @@ const Header = () => {
   };
 
   return (
-    <header className="py-8">
+    <header className="py-8 bg-[#ff5200]">
       <div className="flex items-center justify-between w-[80%] m-auto">
         <div className="h-[48px] w-[160px] cursor-pointer">
           <img

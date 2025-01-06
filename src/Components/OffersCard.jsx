@@ -15,10 +15,10 @@ const OffersCard = () => {
       companyImage: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/31/14033c0b-8907-420b-b72a-d26cfa68dc7b_Genie4BU.png"
     },
   ];
-
+     
   return (
-    <div className='flex justify-center items-center pb-5 px-2'>
-      <div className='flex justify-center max-w-[80%] w-full max-h-[320px] flex-nowrap'>
+    <div className='flex justify-center items-center pb-5 px-2 bg-[#ff5200]'>
+      <div className='flex justify-center overflow-x-scroll max-w-[80%] w-full min-h-[320px] flex-nowrap'>
         {offers.map((image, index) => {
           return (
             <div
@@ -26,7 +26,7 @@ const OffersCard = () => {
               className='cursor-pointer'
             >
               <img
-                className='w-full h-full object-cover'
+                className='w-full h-full object-contain'
                 src={image.companyImage}
                 alt={`offer-${index}`}
               />

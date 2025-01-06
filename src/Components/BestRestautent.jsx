@@ -5,7 +5,7 @@ import { IoIosArrowRoundBack, IoIosArrowRoundForward } from 'react-icons/io';
 const BestRestautent = () => {
     console.log(bestResto.restaurantData)
     return (
-        <main className='bg-white mt-[120px]'>
+        <main className='bg-white'>
             <header className='flex justify-between pb-8'>
                 <h2 className='text-[24px] font-bold font-Gilroy text-[#02060ceb] tracking-[-0.6px] leading-6'>Discover best restaurants on Dineout</h2>
                 <div className='flex gap-3'>

@@ -9,7 +9,7 @@ const Search = () => {
         navigate('/search')
     }
     return (
-        <div className='relative pt-16 pb-8 flex flex-col items-center'>
+        <div className='bg-[#ff5200] relative pt-16 pb-8 flex flex-col items-center'>
             <img className='h-[450px] w-[250px] absolute left-0 top-0 object-cover ' src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Veggies_new.png" alt="" />
             <div className="px-4 flex justify-center text-center " >
                 <div className="font-Gilroy_Bold text-5xl text-[#fff] pl-3 font-bold w-[60%] tracking-[-0.3px] leading-[56px] ">
