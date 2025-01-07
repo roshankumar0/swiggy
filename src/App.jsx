@@ -12,6 +12,7 @@ import Investors from './Components/Investors';
 import ContactUs from './Components/ContactUs';
 import Sustainability from './Components/Sustainability';
 import Home from './Components/Home';
+import About from './Components/About';
 function App() {
   
   return (
@@ -30,6 +31,7 @@ function App() {
       <Route path='/investor' element={<Investors />} />
       <Route path='/contactus' element={<ContactUs />} />
       <Route path='/sustainability' element={<Sustainability />} />
+      <Route path='/about' element={<About />} />
 
     </Routes>
   );

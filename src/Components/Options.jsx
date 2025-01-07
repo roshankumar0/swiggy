@@ -30,7 +30,7 @@ const Options = () => {
     };
     return (
         <div className="">
-            <div className="mt-[120px]">
+            <div >
                 <Orders handleRight={handleRight} handleLeft={handleLeft} />
                 <div className="overflow-x-auto duration-300" style={{ transform: `translateX(-${slide * 100})%` }}>
                     {/* Top Row */}

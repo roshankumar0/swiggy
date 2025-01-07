@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import CorporateNavbar from './CorporateNavbar';
 
 const About = () => {
     const data = [
@@ -97,6 +98,7 @@ const About = () => {
     };
 
     return <>
+    <CorporateNavbar/>
         <div className='flex justify-center items-center py-20 bg-white'>
             <div className='h-[460px]  rounded-[45px] w-[800px]  flex justify-center items-center gap-5 flex-col'>
                 <h2 className=' text-[rgba(2,6,12,0.75)] text-[40px] leading-[49.92px] max-w-[95%] shrink-0 font-black tracking-[0.03px] uppercase text-center mx-[10px] my-0'>IPO Delivered - November 2024</h2>

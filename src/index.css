@@ -1,21 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Hide scrollbar thumb but keep scrolling functional */
-::-webkit-scrollbar {
-    width: 8px;  /* Adjust width of the scrollbar (optional) */
-    height: 8px; /* Adjust height of the scrollbar (optional) */
-}
-  
-::-webkit-scrollbar-thumb {
-    background-color: transparent; /* Hide the thumb */
-    border-radius: 10px;
-}
-  
-::-webkit-scrollbar-track {
-    background: transparent; /* Optional: make track transparent */
-}
 .custom__steps::before{
     content: "";
     position: absolute;
@@ -60,6 +45,10 @@
     filter: blur(100px);
     z-index: -999;
 }
+.scrollbar-hidden::-webkit-scrollbar{
+    display: none;
+} 
+  
 /* ._custom-home > div:not(:nth-child(-n+3)):not(:nth-last-child(-n+2)) {
     @apply w-[80%] mx-auto mt-[120px];
 } */

@@ -63,10 +63,10 @@ const Search = () => {
 
                     </div>
                 </div>
-               <div className="pl-4">
-               <div onClick={handleNavigate} className=' h-full w-[500px] flex justify-between bg-white items-center rounded-[16px] px-[16px] gap-[10px] border-[1.5px] border-[#02060C26]'>
+               <div className="pl-4 w-[500px]">
+               <div onClick={handleNavigate} className=' h-full  flex justify-between bg-white items-center rounded-[16px] px-[16px] gap-[10px] border-[1.5px] border-[#02060C26]'>
                     <span className='text-[18px] leading-[24px] tracking-[-0.3px] font-extralight text-[#02060c73] font-Gilroy'>Search for restaurant, item or more</span>
-                    <div>
+                    <div className="mb-2">
                         <CiSearch size={20} color="#02060c99" fontWeight={600} />
                     </div>
                 </div>

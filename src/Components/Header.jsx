@@ -71,7 +71,7 @@ const Header = () => {
                 <Link to={nav.link} >{nav.navItem}</Link> {nav.icon}
               </li>
             ))}
-            <li className="relative">
+            <li className="relative mb-1">
               <svg
                 onMouseEnter={handleMouseEnter}
                 // onMouseLeave={handleMouseLeave}
@@ -81,6 +81,7 @@ const Header = () => {
                 height={40}
                 viewBox="0 0 40 40"
                 fill="none"
+                
               >
                 <path
                   fillRule="evenodd"

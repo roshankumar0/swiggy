@@ -9,7 +9,7 @@ import SwiggyApp from './SwiggyApp';
 
 function Home() {
   return (
-    <div className='flex flex-col _custom-home'>
+    <div className='flex flex-col '>
       {[
         <Header key="1" />,
         <Search key="2" />,
@@ -24,13 +24,13 @@ function Home() {
         <div
           key={index}
           className={`${[0, 1, 2, 8].includes(index)
-              ? ''
-              : index === 6 || index === 7 ? index === 6 
-                ? 'w-[70%] mx-auto mt-[80px]' // Styles for first Delivery component
-                : 'w-[70%] mx-auto mt-[62px] mb-[80px]' // Styles for second Delivery component (index 7)
-                : index === 5 // SwiggyApp component
-                  ? 'mt-[120px]' // Apply only margin-top for SwiggyApp
-                  : 'w-[80%] mx-auto mt-[120px]' // Styles for other components
+            ? ''
+            : index === 6 || index === 7 ? index === 6
+              ? 'w-[70%] mx-auto mt-[80px]'
+              : 'w-[70%] mx-auto mt-[62px] mb-[80px]'
+              : index === 5
+                ? 'mt-[120px]'
+                : 'w-[80%] mx-auto mt-[120px]'
             }`}
         >
           {Component}

@@ -21,7 +21,7 @@ const BestRestautent = () => {
                 </div>
             </header>
 
-            <section className="flex overflow-x-scroll gap-4">
+            <section className="flex overflow-x-scroll scrollbar-hidden gap-4">
                 {
                     bestResto?.restaurantData?.map((data) => {
                         return <article key={data.id} className="min-w-[328px] text-[13px] border rounded-[16px] font-Gilroy rounded-[16px bg-red-800] overflow-hidden cursor-pointer">
