@@ -5,7 +5,7 @@ import SwiggyApp from './SwiggyApp'
 const ContactUs = () => {
     return (
         <div>
-            <CorporateNavbar />
+            {/* <CorporateNavbar /> */}
             <div className='bg-[#EBEBF3] relative '>
                 <img className='max-w-[170px] object-cover w-full absolute botto ' src="https://www.swiggy.com/corporate/wp-content/uploads/2024/10/yoga-day-2.webp" alt="" />
                 <img className='max-w-[170px] object-cover w-full absolute right-0 top-0 ' src="https://www.swiggy.com/corporate/wp-content/uploads/2024/10/Sandwich-1.webp" alt="" />
@@ -244,8 +244,8 @@ const ContactUs = () => {
                     </div>
                 </div>
             </div>
-            <SwiggyApp />
-            <Footer />
+            {/* <SwiggyApp /> */}
+            {/* <Footer /> */}
         </div>
     )
 }

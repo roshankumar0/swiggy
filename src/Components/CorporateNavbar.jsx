@@ -28,27 +28,6 @@ const CorporateNavbar = () => {
 
     // Handle Navigation
     const handleActive = (route) => {
-        // if (item.includes("About Swiggy")) {
-        //     navigate("/about")
-        // }
-        // if (item.includes("Our Businesses")) {
-        //     navigate("/bussiness")
-        // }
-        // if (item.includes("Delivering For Everyone")) {
-        //     navigate("/delivering")
-        // }
-        // if (item.includes("Newsroom")) {
-        //     navigate("/newsroom")
-        // }
-        // if (item.includes("Investor Relations")) {
-        //     navigate("/investor")
-        // }
-        // if (item.includes("Contact Us")) {
-        //     navigate("/contactus")
-        // }
-        // if (item.includes("Sustainability")) {
-        //     navigate("/sustainability")
-        // }
         navigate(route);
     };
 
@@ -61,16 +40,17 @@ const CorporateNavbar = () => {
                 <nav>
                     <div className='flex items-center justify-between'>
                         <img
-                            className='max-w-[150px] w-full'
+                            className='max-w-[150px] w-full cursor-pointer'
                             src={navbar.image}
                             alt='Swiggy Logo'
+                            onClick={()=>navigate('/corporate')}
                         />
                         <ul className='flex flex-wrap font-Gilroy py-[6px] [&>li]:mx-4 [&>li:first-child]:ml-0 [&>li:last-child]:mr-0'>
                             {navbar.links.map((item, index) => (
                                 <li
                                     key={index}
                                     onClick={() => handleActive(item.route)}
-                                    className={`leading-[24px] relative flex flex-col relative font-semibold tracking-[-0.45px] py-[6px] cursor-pointer justify-center items-center text-[18px] ${location.pathname === item.route
+                                    className={`leading-[24px] relative flex flex-col font-semibold tracking-[-0.45px] py-[6px] cursor-pointer justify-center items-center text-[18px] ${location.pathname === item.route
                                             ? 'text-[#FF5200]'
                                             : 'text-[#333333]'
                                         }`}

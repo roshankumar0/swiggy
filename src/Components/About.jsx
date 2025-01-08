@@ -73,7 +73,6 @@ const About = () => {
                     {currentLoopItem.videoOrImage?.includes('.webp') && <img src={currentLoopItem.videoOrImage} alt={currentLoopItem.title} />}
                     <div className=''>
                         {currentLoopItem.content && currentLoopItem.content.map((item, __i) => {
-                            console.log(item, 'data')
                             return <div className='' key={__i}>
                                 <div className='' onClick={() => handleNavigate(__i)} >
                                     <span >{item.title}</span>
@@ -98,7 +97,7 @@ const About = () => {
     };
 
     return <>
-    <CorporateNavbar/>
+    {/* <CorporateNavbar/> */}
         <div className='flex justify-center items-center py-20 bg-white'>
             <div className='h-[460px]  rounded-[45px] w-[800px]  flex justify-center items-center gap-5 flex-col'>
                 <h2 className=' text-[rgba(2,6,12,0.75)] text-[40px] leading-[49.92px] max-w-[95%] shrink-0 font-black tracking-[0.03px] uppercase text-center mx-[10px] my-0'>IPO Delivered - November 2024</h2>

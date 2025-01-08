@@ -7,7 +7,7 @@ import SwiggyApp from './SwiggyApp'
 const Investors = () => {
     return (
         <div className=''>
-            <CorporateNavbar />
+            {/* <CorporateNavbar /> */}
             <div className='bg-[#ebebf3]'>
                 <div className='mx-[82px] m-auto pb-[120px] '>
                     <div className='flex flex-col items-center'>
@@ -154,8 +154,8 @@ const Investors = () => {
                     </div>
                 </div>
             </div>
-            <SwiggyApp />
-            <Footer />
+            {/* <SwiggyApp /> */}
+            {/* <Footer /> */}
         </div>
     )
 }

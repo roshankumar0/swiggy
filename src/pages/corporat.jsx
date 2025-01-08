@@ -25,7 +25,7 @@ const corporat = () => {
       backgroundAttachment: 'fixed',
     }}
     >
-      <CorporateNavbar />
+      {/* <CorporateNavbar /> */}
       <div className='max-w-[80%] relative m-auto text-center pt-[72px] pb-[80px]'>
       <img width="433" height="171" src="https://www.swiggy.com/corporate/wp-content/uploads/2024/10/about-banner-left-arrow.webp" className='absolute left-[-151px] top-[40px] ' />
         <h2 className=" text-[#02060c]  leading-[49.92px] font-Gilroy font-black text-[40px] tracking-[0.03px] text-center m-0">

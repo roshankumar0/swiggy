@@ -5,7 +5,7 @@ import Footer from '../Components/Footer';
 const Bussiness = () => {
     return (
         <div className='h-full'>
-            <CorporateNavbar />
+            {/* <CorporateNavbar /> */}
             <div className='max-w-[1280px] m-auto'>
                 <div>
                     <div className='flex flex-col'>
@@ -149,7 +149,7 @@ const Bussiness = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }

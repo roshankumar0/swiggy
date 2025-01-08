@@ -6,7 +6,7 @@ import Membership from '../Components/Membership'
 const Delivering = () => {
   return (
     <div>
-      <CorporateNavbar />
+      {/* <CorporateNavbar /> */}
       <div className='z-0'>
         <div className='px-4 mx-[76px]  '>
           <h1 className="text-[rgb(2,6,12)] mt-[30px] mb-[10px] font-black leading-[49.92px] text-[40px] tracking-[0.03px] uppercase text-center  mx-[10px">
@@ -60,8 +60,8 @@ const Delivering = () => {
         </div>
       </div>
       <Membership/>
-      <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/seo/App_download_banner.png" alt="" />
-      <Footer />
+      {/* <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/seo/App_download_banner.png" alt="" /> */}
+      {/* <Footer /> */}
     </div>
   )
 }

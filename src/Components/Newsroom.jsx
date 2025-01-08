@@ -6,7 +6,7 @@ import SwiggyApp from './SwiggyApp'
 const Newsroom = () => {
     return (
         <div >
-            <CorporateNavbar />
+            {/* <CorporateNavbar /> */}
             <div className='bg-[#EBEBF3]'>
                 <div className=''>
                     <div className='pt-[33px]'>
@@ -254,8 +254,8 @@ const Newsroom = () => {
                     </div>
                 </div>
             </div>
-            <SwiggyApp />
-            <Footer />
+            {/* <SwiggyApp /> */}
+            {/* <Footer /> */}
         </div>
     )
 }

@@ -3,9 +3,15 @@ import React from 'react'
 const SwiggyJourney = () => {
     return (
         <div className='bg-[#02060CEB] pt-[80px] pb-[95px]'>
-            <span className="mb-10 text-[#ff5200] text-[40px] leading-[49.92px] block font-black tracking-[0.03px] uppercase text-center mx-[10px] my-0">
-                the swiggy journey
-            </span>
+            <div className='w-[40%] m-auto '>
+                <h2 className='text-white flex justify-center items-center mb-10'>
+                    <span className='h-[2px] bg-[#FF5200] w-1 flex-1 '></span>
+                    <span className=" text-[#ff5200] text-[40px] leading-[49.92px] block font-black tracking-[0.03px] uppercase text-center mx-[10px] my-0">
+                        the swiggy journey
+                    </span>
+                    <span className='h-[2px] bg-[#FF5200] flex-1 w-1'></span>
+                </h2>
+            </div>
             <div className='flex overflow-scroll gap-7'>
                 <div className=" text-[rgb(51,51,51)] relative self-auto flex-[1_0_auto] order-none items-center gap-[72px] h-[297.55px] min-h-[auto] min-w-0 overflow-visible w-[739.5px] z-auto text-start flex text-[16px] font-normal leading-[24px] rounded-[40px] border-[0.8px] border-solid border-[rgb(84,100,120)]" >
                     <span>

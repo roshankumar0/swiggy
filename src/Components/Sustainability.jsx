@@ -6,7 +6,7 @@ import SwiggyApp from './SwiggyApp'
 const Sustainability = () => {
     return (
         <div>
-            <CorporateNavbar />
+            {/* <CorporateNavbar /> */}
             <div className='h-[75vh] flex items-center justify-center bg-[#ebebf3]'>
                 <div className='mb-[120px]'>
                     <h2 className=" mb-5 text-[rgba(2,6,12,0.92)] font-extrabold leading-[50px] text-[40px] tracking-[0.3px]  m-0">
@@ -281,8 +281,8 @@ const Sustainability = () => {
                     </div>
                 </div>
             </div>
-            <SwiggyApp />
-            <Footer />
+            {/* <SwiggyApp />
+            <Footer /> */}
         </div>
     )
 }
