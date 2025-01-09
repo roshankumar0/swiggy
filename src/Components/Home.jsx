@@ -6,11 +6,13 @@ import Search from './Search';
 import Options from '../Components/Options';
 import BestRestautent from './BestRestautent';
 import SwiggyApp from './SwiggyApp';
+import CreateAccount from './CreateAccount';
 
 function Home() {
   return (
  <Layout>
      <div className='flex flex-col '>
+      <CreateAccount/>
       {[
         <Header key="1" />,
         <Search key="2" />,

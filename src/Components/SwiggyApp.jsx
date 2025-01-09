@@ -2,7 +2,7 @@ import React from 'react'
 
 const SwiggyApp = () => {
   return (
-    <div className='bg-[#02060CEB] '>
+    <div className='bg-[#02060CEB] ' id='gettheapp'>
       <div className=''>
         <div className='flex gap-x-[196px] justify-center items-center pt-[34px]'>
           <div>
